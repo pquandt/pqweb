@@ -5,27 +5,34 @@ body {
   font-family: "Poppins", "Montserrat", "Arial", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: rgb(18, 18, 18);
   color: white;
+  text-align: center;
 }
 
 div {
-  text-align: center;
-  animation: fade 1s ease-in;
+ color: white;
+  animation: fadeInLeft 1s ease-in;
 }
 
 .name {
+  overflow:hidden;
+  margin: 50px;
   color: #fff;
   font-size: 70px;
   font-weight: 700;
-  letter-spacing: 1px;
+  word-spacing: 20px;
+  letter-spacing: 5px;
 }
 
-@keyframes fade {
+@keyframes fadeInLeft {
+ 
   from {
-    opacity: 0;
-  }
+    
+      opacity:0;
+       }
   to {
-    opacity: 1;
-  }
+    
+      opacity:1;
+             }
 }

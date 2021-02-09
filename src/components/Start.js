@@ -5,7 +5,7 @@ import TimeOfDay from "./Greeting";
 function Start() {
   return (
     <div>
-      <div>
+        <div>
         <h1 className="name"> Patrick Quandt</h1>
       </div>
       <div>
