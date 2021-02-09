@@ -1,6 +1,6 @@
 import React from "react";
 import "./Start.css";
-// import TimeOfDay from "./TimeOfDay";
+import TimeOfDay from "./Greeting";
 
 function Start() {
   return (
@@ -9,7 +9,7 @@ function Start() {
         <h1 className="name"> Patrick Quandt</h1>
       </div>
       <div>
-        <p>Guten </p>
+        <p>{TimeOfDay()}. Willkommen auf meiner persönlichen Homepage.</p>
       </div>
     </div>
   );
