@@ -1,0 +1,8 @@
+img {
+    height: 70%; 
+    width: 70%;
+    border-radius: 50%;
+    display: block;
+    justify-content: center;
+    margin: auto;
+ }

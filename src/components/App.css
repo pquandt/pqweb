@@ -7,15 +7,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(18, 18, 18);
   color: white;
-  text-align: center;
+}
+
+.startTop {
+text-align: center;
 }
 
 div {
  color: white;
-  animation: fadeInLeft 1s ease-in;
 }
 
 .name {
+  animation: fadeInLeft 1s ease-in;
   overflow:hidden;
   margin: 50px;
   color: #fff;
@@ -25,7 +28,6 @@ div {
   letter-spacing: 5px;
 }
 
-@keyframes fadeInLeft {
  
   from {
     
@@ -35,4 +37,3 @@ div {
     
       opacity:1;
              }
-}
