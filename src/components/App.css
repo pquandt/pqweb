@@ -5,8 +5,8 @@ body {
   font-family: "Poppins", "Montserrat", "Arial", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(18, 18, 18);
-  color: white;
+  background-color: #222831;
+  color: #eee;
 }
 
 .startTop {
@@ -21,7 +21,7 @@ div {
   animation: fadeInLeft 1s ease-in;
   overflow:hidden;
   margin: 50px;
-  color: #fff;
+  color: #eee;
   font-size: 70px;
   font-weight: 700;
   word-spacing: 20px;
