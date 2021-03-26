@@ -1,6 +1,6 @@
 import { Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./Navi.css";
+
 
 export default function NavBarComp() {
   return (

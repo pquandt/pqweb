@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import "./Test.css"
+
 
 function Test() {
   return (

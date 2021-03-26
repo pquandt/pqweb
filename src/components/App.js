@@ -1,6 +1,5 @@
 import React from "react";
-import "./App.css";
-import Navi from "./Navi";
+// import Navi from "./Navi";
 import { Route, Switch } from "react-router-dom";
 import Test from "./Test";
 import { Container } from "react-bootstrap";
@@ -9,7 +8,7 @@ import Home from "./Home"
 function Start() {
   return (
     <Container>
-      <Navi />
+      {/* <Navi /> */}
       <Switch>
         <Route path="/Test">
           <Test />
