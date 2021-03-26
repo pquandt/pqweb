@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,800;0,900;1,100;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,800;0,900;1,100;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInButtom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes blendIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #eee;
+  padding: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.header {
+  text-align: center; }
+
+.name {
+  overflow: hidden;
+  margin: 50px;
+  color: #eee;
+  font-size: 70px;
+  font-weight: 700;
+  word-spacing: 20px;
+  letter-spacing: 5px;
+  animation-name: blendIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in; }
+
+p {
+  font-size: large;
+  animation-name: moveInButtom;
+  animation-duration: 1s;
+  animation-timing-function: ease-in; }
+
+.navibar, .navlink {
+  color: #eee;
+  background-color: #393e46;
+  font-family: Poppins, sans-serif;
+  border-radius: 50px;
+  margin: 5px;
+  width: fit-content; }
+
+.navlink:hover {
+  color: #00adb5;
+  font-weight: bold; }
