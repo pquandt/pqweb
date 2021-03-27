@@ -7,13 +7,13 @@ const skilldata = [
     {
         id: 2,
         skillName: "Video",
-        skill: ["Adobe-Creative-Suite", "Filming", "Editing"],
+        skill: ["Adobe-Creative-Suite", "DaVinci-Resolve", "VMix", "Wirecast"],
     
     },
     {
         id: 3,
         skillName: "Audio",
-        skill: ["ProTools", "Mixing", "Editing"]
+        skill: ["ProTools"]
     }
 ]
 
