@@ -6,7 +6,7 @@ function Card(props) {
 
 
 
-const listItems = props.skill.map((item) =>  <li>{item}</li>);
+const listItems = props.skill.map((item) =>  <li key={props.id}>{item}</li>);
 
   return (
     <div className="card">
@@ -18,5 +18,6 @@ const listItems = props.skill.map((item) =>  <li>{item}</li>);
     </div>
   );
 }
+
 
 export default Card;
