@@ -1,8 +1,8 @@
-const skilltree = [
+const skilldata = [
     {
         id: 1,
         skillName: "Webdev",
-        skill: ["html", "css", "javascript", "reactJs"]
+        skill: ["html", "css", "scss", "javascript", "reactJs"]
     },
     {
         id: 2,
@@ -17,4 +17,4 @@ const skilltree = [
     }
 ]
 
-export default skilltree
+export default skilldata

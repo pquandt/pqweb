@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import skilltree from "./Skilltrees"
+import skilldata from "./Skilldata"
 
 export default function Skills() {
   return (
@@ -9,13 +9,13 @@ export default function Skills() {
 
       <div className="row">
         <div className="col-1-of-3">
-     <Card name={skilltree[0].skillName} />
+     <Card name={skilldata[0].skillName} skill={skilldata[0].skill} />
         </div>
         <div className="col-1-of-3">
-        <Card name={skilltree[1].skillName} />
+        <Card name={skilldata[1].skillName} skill={skilldata[1].skill} />
         </div>
         <div className="col-1-of-3">
-        <Card name={skilltree[2].skillName} />
+        <Card name={skilldata[2].skillName} skill={skilldata[2].skill} />
         </div>
   
         

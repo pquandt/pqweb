@@ -75,6 +75,15 @@ h1 {
 .row {
   max-width: 114rem;
   margin: 0 20% 20%; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table; }
@@ -82,6 +91,13 @@ h1 {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -97,7 +113,8 @@ h1 {
 
 .header {
   text-align: center;
-  height: 50vh; }
+  height: 50vh;
+  position: relative; }
 
 .name {
   color: #eee;
@@ -124,7 +141,7 @@ h1 {
   color: black;
   border: 1px solid black;
   padding: 2rem;
-  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2); }
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1); }
   .card-Headline {
     font-size: 2rem;
     font-weight: 700;
@@ -136,10 +153,12 @@ h1 {
     line-height: 3rem; }
 
 .skills {
+  position: relative;
   background-color: #fff;
   text-align: center;
   height: 50vh;
   padding-top: 2.5rem;
-  color: #000; }
+  color: #000;
+  word-wrap: break-word; }
   .skills h1 {
     padding-bottom: 3rem; }

@@ -5,8 +5,11 @@ import Skills from "./Skills";
 function Start() {
   return (
     <div>
-      <Header />
-      <Skills />
+  
+        <Header />
+     
+        <Skills />
+  
     </div>
   );
 }

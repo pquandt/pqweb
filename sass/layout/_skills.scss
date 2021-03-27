@@ -1,12 +1,14 @@
 
 
 .skills {
-  
+    position: relative;
     background-color: $color-white;
     text-align: center;
     height: 50vh;
     padding-top: 2.5rem;
     color: $color-black;
+    word-wrap: break-word;
+    
     h1 {
         padding-bottom: 3rem;
     }
