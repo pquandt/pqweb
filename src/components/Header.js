@@ -10,7 +10,7 @@ function Home() {
           <h1 className="name"> Patrick Quandt</h1>
         </div>
         <div>
-          <p>{TimeOfDay()} Willkommen auf meiner persönlichen Homepage.</p>
+          <p className="greeting">{TimeOfDay()} Willkommen auf meiner persönlichen Homepage.</p>
         </div>
     
       </div>
