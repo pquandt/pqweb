@@ -74,7 +74,7 @@ h1 {
 
 .row {
   max-width: 114rem;
-  margin: 0 20% 20%; }
+  margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
     @media only screen and (max-width: 56.25em) {
@@ -86,7 +86,8 @@ h1 {
       padding: 0 3rem; } }
   .row::after {
     content: "";
-    display: table; }
+    display: table;
+    clear: both; }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {

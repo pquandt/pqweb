@@ -1,5 +1,5 @@
 .card {
-
+    
     width: calc(max-content*2);
     height: max-content;
     background-color: white;
@@ -7,6 +7,8 @@
     border: 1px solid black;
     padding: 2rem;
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.100);
+  
+    
 
    &-Headline {
        font-size: 2rem;
@@ -14,6 +16,7 @@
        padding-bottom: 1rem;
    } 
    
+
  &-list {
     list-style-type: none;
     text-align: left;
