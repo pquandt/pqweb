@@ -4,10 +4,11 @@
     position: relative;
     background-color: $color-white;
     text-align: center;
-    height: 100vh;
+    height: max-content;
     padding-top: 2.5rem;
     color: $color-black;
     word-wrap: break-word;
+    padding-bottom: 5rem;
     
     h1 {
         padding-bottom: 3rem;
