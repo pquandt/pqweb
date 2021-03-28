@@ -147,6 +147,7 @@ h1 {
     font-weight: 700;
     padding-bottom: 1rem; }
   .card-list {
+    padding: 0 2.5rem 0;
     list-style-type: none;
     text-align: left;
     font-size: 1.5rem;
