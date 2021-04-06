@@ -4,12 +4,14 @@ import About from "./About";
 
 function Start() {
   return (
-    
     <div className="row">
-    <div className="column-left">
-      <Nav /></div>
-    <div className="column-right">
-      <About />
+      <div className="column-left">
+        <Nav />
+      </div>
+      <div className="column-right">
+       
+          <About />
+        
       </div>
     </div>
   );

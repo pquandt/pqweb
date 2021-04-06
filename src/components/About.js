@@ -8,7 +8,7 @@ export default function About() {
     <div className="about">
       <div>
       <h1>Hello, I am Patrick Quandt and</h1>
-      <span>I am a <span className="bluespan">frontend developer</span></span> 
+      <span className="about-span">I am a <span className="about-blue-span">frontend developer</span></span> 
 </div>
 <div className="landscape-img">
   <img src="/img/patrick_business_1.jpg" alt="Patrick Quandt"/>
@@ -16,9 +16,7 @@ export default function About() {
 
 <div className="about-text">
   <h2>Overall experience</h2>
-  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repudiandae ipsa magnam, </span>
-  <span>libero odit dignissimos a ducimus neque adipisci ut. </span>
- <span> Ipsa dolorem quos tempore, tenetur accusamus eaque ipsum quis exercitationem.</span>
+  Through my experience in the areas of video, audio and corporate identity, I have a broad understanding of media projects from which my customers benefit.
     </div>
     </div>
   );

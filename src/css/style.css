@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,800;0,900;1,100;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,800;0,900;1,100;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Grotesk:wght@300&display=swap");
 *,
 *::after,
 *::before {
@@ -12,7 +12,7 @@ html {
   height: 100vh; }
 
 body {
-  background-color: #fff;
+  background-color: #f9f9f9;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -51,17 +51,12 @@ body {
     opacity: 1; } }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #000; }
+  color: #131313; }
 
 h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 4rem; }
-
-span {
-  font-family: "Poppins", sans-serif;
+  font-family: "SpaceGrotesk-Light", sans-serif;
   font-weight: 700;
   font-size: 4rem; }
 
@@ -109,6 +104,7 @@ span {
     width: 30%; }
   .row .column-right {
     float: left;
+    margin-left: 30%;
     width: 70%; }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
@@ -123,38 +119,48 @@ span {
   .row .col-3-of-4 {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
-.NavBar {
-  padding-left: 20vh;
-  list-style: none; }
-
-.__nav-logo {
-  margin-top: 4rem;
-  padding-left: 20vh;
-  margin-bottom: 4rem; }
-
-.__navlist {
-  list-style: none;
-  font-size: 2rem;
-  color: #000; }
-  .__navlist a:link {
-    color: #000;
-    text-decoration: none; }
-  .__navlist a:visited {
-    color: #000;
-    text-decoration: none; }
-  .__navlist a:hover {
-    color: cyan;
-    text-decoration: none; }
-  .__navlist a:active {
-    color: #000;
-    text-decoration: none; }
+.nav {
+  position: fixed;
+  margin-left: 20vh; }
+  .nav-bar {
+    list-style: none; }
+  .nav-logo {
+    margin-top: 4rem;
+    overflow: visible; }
+  .nav-logo-subtext {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 3rem; }
+  .nav-logo img {
+    width: 70%;
+    margin-left: -1rem; }
+  .nav-list {
+    list-style: none;
+    font-size: 1.8rem;
+    font-family: "Open Sans";
+    color: #131313; }
+    .nav-list a:link {
+      color: #131313;
+      text-decoration: none; }
+    .nav-list a:visited {
+      color: #131313;
+      text-decoration: none; }
+    .nav-list a:hover {
+      color: #0070ff;
+      text-decoration: none; }
+    .nav-list a:active {
+      color: #131313;
+      text-decoration: none; }
 
 .about {
   margin-top: 10%;
   height: 100vh; }
-
-.bluespan {
-  color: cyan; }
+  .about-span {
+    font-family: "SpaceGrotesk-Light", sans-serif;
+    font-weight: 700;
+    font-size: 4rem; }
+  .about-blue-span {
+    color: #0070ff; }
 
 .landscape-img {
   float: right;
@@ -168,13 +174,17 @@ span {
   width: auto;
   height: 100%; }
 
-.about-text h2 {
-  margin-top: 2rem;
-  margin-bottom: 1.5rem; }
-
-.about-text span {
-  font-size: 1.5rem;
-  font-weight: 400; }
+.about-text {
+  font-family: "Open Sans";
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  width: 60rem; }
+  .about-text h2 {
+    font-family: "Open Sans";
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem; }
 
 .card {
   background-color: white;

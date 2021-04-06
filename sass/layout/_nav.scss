@@ -1,16 +1,33 @@
-.NavBar {
-  padding-left: 20vh;
+.nav {
+  position: fixed;
+  margin-left: 20vh;
+
+&-bar {
+  
   list-style: none;
+  
 }
 
-.__nav-logo {
+&-logo {
   margin-top: 4rem;
-  padding-left: 20vh;
-  margin-bottom: 4rem;
+  overflow: visible;
+  
 }
-.__navlist {
+
+&-logo-subtext {
+ font-size: 1.2rem;
+ font-weight: 700;
+ margin-bottom: 3rem;
+}
+&-logo img {
+  width: 70%;
+ margin-left: -1rem;
+}
+
+&-list {
   list-style: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-family: $primary-font;
   color: $color-black;
 
   a:link {
@@ -29,4 +46,5 @@
     color: $color-black;
     text-decoration: none;
   }
+}
 }

@@ -4,12 +4,13 @@ import React from 'react'
 function Nav () {
     return (
         
-      <div>
-       <div><img src="/" alt="Logo" className="__nav-logo"/></div>
+      <div className="nav">
+       <div className="nav-logo"><img src="img/pqlogo.svg" alt="Logo" /></div>
+       <div className="nav-logo-subtext">Patrick Quandt <br/>Frontend Developer</div>
  
 
-<nav className="NavBar">
-  <ul className="__navlist">
+<nav className="nav-bar">
+  <ul className="nav-list">
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
