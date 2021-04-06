@@ -1,0 +1,31 @@
+.about {
+    margin-top: 10%;
+height: 100vh;
+
+}
+.bluespan {
+ color: $color-highlight;
+}
+
+.landscape-img {
+    float: right;
+   margin-right: 30vh;
+   width: 25rem;
+   height: 25rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.landscape-img img {
+    width: auto;
+    height: 100%;
+}
+
+.about-text h2 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+.about-text span {
+    font-size: 1.5rem;
+    font-weight: 400;
+}

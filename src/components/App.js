@@ -1,18 +1,16 @@
 import React from "react";
-import Header from "./Header";
-import Skills from "./Skills";
-
+import Nav from "./Nav";
+import About from "./About";
 
 function Start() {
   return (
-    <div>
     
-        <Header />
-        <Skills />
-      
-     
-     
-  
+    <div className="row">
+    <div className="column-left">
+      <Nav /></div>
+    <div className="column-right">
+      <About />
+      </div>
     </div>
   );
 }
