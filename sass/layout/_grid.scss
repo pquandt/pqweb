@@ -17,7 +17,6 @@
 
   @include clearfix;
 
-
   [class^="col-"] {
     float: left;
 
@@ -30,24 +29,17 @@
       }
     }
 
-
     @include respond(tab-port) {
       width: 100% !important;
     }
   }
 
   .column-left {
-    float: left;
     width: 30%;
-   
-  
   }
   .column-right {
-    float: left;
     margin-left: 30%;
     width: 70%;
-    
-  
   }
 
   .col-1-of-2 {
@@ -80,4 +72,3 @@
     );
   }
 }
-

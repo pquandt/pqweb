@@ -1,6 +1,7 @@
 .about {
-    margin-top: 10%;
-height: 100vh;
+   padding-top: 10%;
+   padding-left: 5%;
+    height: 100vh;
 
 &-span {
     font-family: $secondary-font, sans-serif;
@@ -16,10 +17,10 @@ height: 100vh;
 
 
 .landscape-img {
-    float: right;
-   margin-right: 30vh;
-   width: 25rem;
-   height: 25rem;
+    display: inline-block;
+  
+   width: 26rem;
+   height: 26rem;
     overflow: hidden;
     border-radius: 50%;
 }
@@ -31,6 +32,7 @@ height: 100vh;
 
 
 .about-text {
+    display: inline-block;
     font-family: $primary-font;
     font-size: 2rem;
     font-weight: 400;
