@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Grotesk:wght@300&display=swap");
 *,
 *::after,
@@ -56,7 +56,7 @@ body {
   color: #131313; }
 
 h1 {
-  font-family: "SpaceGrotesk-Light", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   font-size: 4rem; }
 
@@ -74,56 +74,72 @@ h1 {
 
 .container {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 0.5rem;
+  margin: 0 20rem 0;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(3, 1fr);
   height: 100vh; }
 
 #navcontent {
-  background-color: pink; }
+  background-color: pink;
+  position: fixed;
+  margin-left: 16%; }
 
 #aboutcontent {
   background-color: greenyellow; }
 
-.nav-bar {
-  list-style: none; }
+#skillcontent {
+  grid-column: 2/3;
+  background-color: aquamarine; }
 
-.nav-logo {
-  overflow: visible; }
+#projectcontent {
+  grid-column: 2/3;
+  background-color: palevioletred; }
 
-.nav-logo-subtext {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 3rem; }
+#contactcontent {
+  grid-column: 2/3;
+  background-color: palegoldenrod; }
 
-.nav-logo img {
-  width: 20%;
-  margin-left: -1rem; }
-
-.nav-list {
-  font-size: 1.8rem;
-  font-family: "Open Sans";
-  color: #131313;
-  text-decoration: none;
-  list-style: none; }
-  .nav-list a:link {
+.nav {
+  white-space: nowrap;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  margin-top: 10%; }
+  .nav-bar {
+    list-style: none; }
+  .nav-logo {
+    overflow: visible; }
+  .nav-logo-subtext {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 3rem; }
+  .nav-logo img {
+    width: 7rem;
+    margin-left: -1.2rem; }
+  .nav-list {
+    font-size: 1.8rem;
+    font-family: "Open Sans";
     color: #131313;
-    text-decoration: none; }
-  .nav-list a:visited {
-    color: #131313;
-    text-decoration: none; }
-  .nav-list a:hover {
-    color: #0070ff;
-    text-decoration: none; }
-  .nav-list a:active {
-    color: #0070ff;
-    text-decoration: none; }
+    text-decoration: none;
+    list-style: none; }
+    .nav-list a:link {
+      color: #131313;
+      text-decoration: none; }
+    .nav-list a:visited {
+      color: #131313;
+      text-decoration: none; }
+    .nav-list a:hover {
+      color: #0070ff;
+      text-decoration: none; }
+    .nav-list a:active {
+      color: #0070ff;
+      text-decoration: none; }
 
 .about {
   padding-top: 10%;
   padding-left: 5%;
   height: 100vh; }
   .about-span {
-    font-family: "SpaceGrotesk-Light", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-weight: 700;
     font-size: 4rem; }
   .about-blue-span {
@@ -153,6 +169,68 @@ h1 {
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1.5rem; }
+
+.skills {
+  margin-top: 10%;
+  padding-left: 5%;
+  height: 100vh; }
+  .skills-span {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 4rem; }
+  .skills-blue-span {
+    color: #0070ff; }
+  .skills h1 {
+    margin-bottom: 4rem; }
+  .skills-img {
+    margin-right: 4rem; }
+
+.skills-text {
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+  width: 60rem; }
+  .skills-text h2 {
+    font-family: "Open Sans";
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem; }
+  .skills-text dt {
+    font-weight: bold; }
+  .skills-text dd {
+    margin-left: 3rem; }
+
+.contact {
+  margin-top: 10%;
+  padding-left: 5%;
+  height: 100vh; }
+  .contact-span {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 4rem; }
+  .contact-blue-span {
+    color: #0070ff; }
+  .contact h1 {
+    margin-bottom: 4rem; }
+  .contact-img {
+    margin-right: 4rem; }
+
+.contact-text {
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+  width: 60rem; }
+  .contact-text h2 {
+    font-family: "Open Sans";
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem; }
+  .contact-text dt {
+    font-weight: bold; }
+  .contact-text dd {
+    margin-left: 3rem; }
 
 .card {
   background-color: #f9f9f9;

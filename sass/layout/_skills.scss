@@ -1,5 +1,5 @@
-.about {
-  padding-top: 10%;
+.skills {
+  margin-top: 10%;
   padding-left: 5%;
   height: 100vh;
 
@@ -12,27 +12,18 @@
   &-blue-span {
     color: $color-highlight;
   }
+  & h1 {
+    margin-bottom: 4rem;
+  }
+  &-img {
+    // float: right;
+    margin-right: 4rem;
+  }
 }
 
-.landscape-img {
-  display: inline-block;
-
-  width: 26rem;
-  height: 26rem;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.landscape-img img {
-  width: auto;
-  height: 100%;
-  margin-left: -50px;
-}
-
-.about-text {
-  display: inline-block;
+.skills-text {
   font-family: $primary-font;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.6;
   width: 60rem;
@@ -42,5 +33,12 @@
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
+  }
+
+  & dt {
+    font-weight: bold;
+  }
+  & dd {
+    margin-left: 3rem;
   }
 }

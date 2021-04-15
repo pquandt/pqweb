@@ -1,4 +1,9 @@
 .nav {
+  white-space: nowrap;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  margin-top: 10%;
+
   &-bar {
     list-style: none;
   }
@@ -13,8 +18,8 @@
     margin-bottom: 3rem;
   }
   &-logo img {
-    width: 20%;
-    margin-left: -1rem;
+    width: 7rem;
+    margin-left: -1.2rem;
   }
 
   &-list {
