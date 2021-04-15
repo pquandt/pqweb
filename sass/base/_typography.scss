@@ -1,12 +1,11 @@
 @import "../abstracts/variables";
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Grotesk:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Grotesk:wght@300&display=swap");
 
 body {
   font-family: $primary-font, sans-serif;
   font-weight: 400;
-  color: $color-black;
+  color: $color-font;
 }
 
 h1 {
@@ -14,6 +13,3 @@ h1 {
   font-weight: 700;
   font-size: 4rem;
 }
-
-
-

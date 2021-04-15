@@ -1,18 +1,15 @@
-
-
-
 function TimeOfDay(greeting) {
   var date = new Date();
   let hour = date.getHours();
 
   if (hour < 4) {
-    greeting = "Es ist mitten in der Nacht! 😂 ";
+    greeting = "It is in the middle of the night 😂 ";
   } else if (hour < 10) {
-    greeting = "Guten Morgen.";
+    greeting = "Good Morning.";
   } else if (hour < 20) {
-    greeting = "Guten Tag.";
+    greeting = "Hello.";
   } else {
-    greeting = "Guten Abend.";
+    greeting = "Good evening.";
   }
 
   return greeting;
