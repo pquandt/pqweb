@@ -11,10 +11,8 @@ function Start() {
       <div id="navcontent">
         <Nav />
       </div>
-
       <div className="container">
         <div className="left-col"></div>
-
         <div id="aboutcontent">
           <About />
         </div>

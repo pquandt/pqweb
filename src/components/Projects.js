@@ -1,4 +1,5 @@
 import React from "react";
+import skillpic from "../img/programming-amico-1.svg";
 
 // STILL ABOUT PAGE
 
@@ -10,11 +11,7 @@ export default function Projects() {
       </div>
 
       <div className="skills-text">
-        <img
-          src="img/programming-amico-1.svg"
-          alt="img"
-          className="skills-img"
-        />
+        <img src={skillpic} alt="img" className="skills-img" />
         <h2>Lorem Ipsum Projekt</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat

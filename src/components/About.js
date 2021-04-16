@@ -1,4 +1,5 @@
 import React from "react";
+import avatar from "../img/patrick_business_1.jpg";
 
 export default function About() {
   return (
@@ -10,14 +11,19 @@ export default function About() {
         </span>
       </div>
 
-      <div className="about-text">
-        <h2>Overall experience</h2>
-        Through my experience in the areas of video, audio and corporate
-        identity, I have a broad understanding of media projects from which my
-        customers benefit.
-      </div>
-      <div className="landscape-img">
-        <img src="/img/patrick_business_1.jpg" alt="Patrick Quandt" />
+      <div className="about-text-wrapper">
+        <div className="about-text">
+          <h2>Overall experience</h2>
+          <p>
+            Through my experience in the areas of video, audio and corporate
+            identity, I have a broad understanding of media projects from which
+            my customers benefit.
+          </p>
+        </div>
+
+        <div className="landscape-img">
+          <img src={avatar} alt="Patrick Quandt" />
+        </div>
       </div>
     </div>
   );

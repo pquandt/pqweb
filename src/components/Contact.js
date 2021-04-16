@@ -5,15 +5,13 @@ export default function Contact() {
     <div className="contact">
       <h1>Contact</h1>
       <p>
-        <h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-          quibusdam fugit numquam labore, possimus, modi magni excepturi dolores
-          quod similique ex facere! Inventore fugiat esse obcaecati et soluta
-          quas accusantium? Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Itaque quibusdam fugit numquam labore, possimus, modi magni
-          excepturi dolores quod similique ex facere! Inventore fugiat esse
-          obcaecati et soluta quas accusantium?
-        </h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+        quibusdam fugit numquam labore, possimus, modi magni excepturi dolores
+        quod similique ex facere! Inventore fugiat esse obcaecati et soluta quas
+        accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Itaque quibusdam fugit numquam labore, possimus, modi magni excepturi
+        dolores quod similique ex facere! Inventore fugiat esse obcaecati et
+        soluta quas accusantium?
       </p>
     </div>
   );

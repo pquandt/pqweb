@@ -1,11 +1,11 @@
 import React from "react";
-// import TimeOfDay from "./Greeting";
+import logo from "../img/pqlogo.svg";
 
 function Nav() {
   return (
     <div className="nav">
       <div className="nav-logo">
-        <img src="img/pqlogo.svg" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </div>
       <div className="nav-logo-subtext">
         Patrick Quandt <br />
@@ -15,13 +15,13 @@ function Nav() {
       <nav className="nav-bar">
         <ul className="nav-list">
           <li>
-            <a href="#about">About</a>
+            <a href="#aboutcontent">About</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projectcontent">Projects</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contactcontent">Contact</a>
           </li>
         </ul>
       </nav>
