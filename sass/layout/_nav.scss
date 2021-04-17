@@ -1,6 +1,5 @@
 .nav {
   white-space: nowrap;
-  margin-left: 2rem;
   margin-right: 1rem;
   margin-top: 10%;
 
@@ -15,19 +14,20 @@
   &-logo-subtext {
     font-size: 1.2rem;
     font-weight: 700;
-    margin-bottom: 3rem;
+    margin-bottom: 2.3rem;
   }
   &-logo img {
     width: 7rem;
-    margin-left: -1.2rem;
+    margin-left: -1rem;
   }
 
   &-list {
-    font-size: 1.8rem;
+    font-size: $default-font-size;
     font-family: $primary-font;
     color: $color-font;
     text-decoration: none;
     list-style: none;
+    line-height: $default-font-size * 2;
 
     a:link {
       color: $color-font;

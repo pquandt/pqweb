@@ -4,7 +4,7 @@ import avatar from "../img/patrick_business_1.jpg";
 export default function About() {
   return (
     <div className="about">
-      <div>
+      <div className="about-headline">
         <h1>Hello, I am Patrick Quandt and</h1>
         <span className="about-span">
           I am a <span className="about-blue-span">frontend developer</span>
@@ -12,8 +12,10 @@ export default function About() {
       </div>
 
       <div className="about-text-wrapper">
+        <div className="vLine">1</div>
         <div className="about-text">
           <h2>Overall experience</h2>
+
           <p>
             Through my experience in the areas of video, audio and corporate
             identity, I have a broad understanding of media projects from which

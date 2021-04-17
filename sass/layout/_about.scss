@@ -1,7 +1,12 @@
 .about {
-  padding-top: 10%;
+  padding-top: 15%;
   padding-left: 5%;
   height: 100vh;
+
+  &-headline {
+    padding-left: 2.5rem;
+    margin-bottom: 3rem;
+  }
 
   &-span {
     font-family: $secondary-font, sans-serif;
@@ -16,32 +21,46 @@
 
 .about-text {
   font-family: $primary-font;
-  font-size: $default-font-size + 0.1rem;
+  font-size: $default-font-size;
   font-weight: 400;
   line-height: 1.6;
+  padding: 0.5rem 2rem 0 0;
+  margin-right: 2rem;
 
   &-wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 0.1fr 2fr 1fr;
+    grid-template-rows: 15rem;
   }
 
   & h2 {
     font-family: $primary-font;
-    font-size: $subhead-font-size;
+    font-size: $default-font-size;
     margin-top: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
 
 .landscape-img {
-  width: 26rem;
-  height: 26rem;
+  position: relative;
+  top: -8rem;
+  width: 23rem;
+  height: 23rem;
   overflow: hidden;
   border-radius: 50%;
+  margin-left: 1rem;
 }
 
 .landscape-img img {
   width: auto;
   height: 100%;
   margin-left: -5rem;
+}
+
+.vLine {
+  border-right: 0.05rem solid $color-highlight;
+  height: auto;
+  color: $color-highlight;
+  margin: 2rem 2rem 0 0rem;
+  padding: 1rem;
 }
