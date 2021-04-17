@@ -1,7 +1,7 @@
 .skills {
-  margin-top: 10%;
+  margin-top: 5%;
   padding-left: 5%;
-  height: 100vh;
+  height: fit-content;
 
   &-span {
     font-family: $secondary-font, sans-serif;
@@ -14,6 +14,7 @@
   }
   & h1 {
     margin-bottom: 4rem;
+    padding-left: 8rem;
   }
   &-img {
     width: 35rem;
@@ -21,7 +22,7 @@
 
   &-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.1fr 1fr 1fr;
   }
 }
 
@@ -31,7 +32,7 @@
   font-family: $primary-font;
   font-size: $default-font-size;
   font-weight: 400;
-  line-height: $default-font-size;
+  line-height: $default-font-size * 1.5;
 
   & h2 {
     font-family: $primary-font;
