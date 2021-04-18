@@ -117,6 +117,7 @@ h1 {
       text-decoration: none; }
 
 .about {
+  animation: blendIn 1s ease-in;
   padding-top: 15%;
   padding-left: 5%;
   height: 100%; }
@@ -169,7 +170,8 @@ h1 {
   padding: 1rem; }
 
 .skills {
-  margin-top: 5%;
+  animation: blendIn 1s ease-in;
+  margin-top: 15%;
   padding-left: 5%;
   height: 100%; }
   .skills-span {
@@ -205,6 +207,7 @@ h1 {
     margin-left: 3rem; }
 
 .contact {
+  animation: blendIn 1s ease-in;
   margin-top: 10%;
   padding-left: 5%;
   height: 100%; }
