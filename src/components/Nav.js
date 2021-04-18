@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../img/pqlogo.svg";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -14,15 +15,15 @@ function Nav() {
 
       <nav className="nav-bar">
         <ul className="nav-list">
-          <li>
-            <a href="#aboutcontent">About</a>
-          </li>
-          <li>
-            <a href="#projectcontent">Projects</a>
-          </li>
-          <li>
-            <a href="#contactcontent">Contact</a>
-          </li>
+          <Link to="/">
+            <li>About</li>
+          </Link>
+          <Link to="projects">
+            <li>Projects</li>
+          </Link>
+          <Link to="contact">
+            <li>Contact</li>
+          </Link>
         </ul>
       </nav>
     </div>

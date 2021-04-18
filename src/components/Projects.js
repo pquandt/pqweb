@@ -5,7 +5,7 @@ import skillpic from "../img/programming-amico-1.svg";
 
 export default function Projects() {
   return (
-    <div className="skills">
+    <section className="skills" id="projectcontent">
       <div>
         <h1>Projects</h1>
       </div>
@@ -20,6 +20,6 @@ export default function Projects() {
           Facilis libero optio aut?
         </p>
       </div>
-    </div>
+    </section>
   );
 }
