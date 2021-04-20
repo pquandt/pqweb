@@ -3,7 +3,7 @@ import avatar from "../img/patrick_business_1.jpg";
 
 export default function About() {
   return (
-    <section className="about" id="aboutcontent">
+    <section className="about">
       <div className="about-headline">
         <h1>Hello, I am Patrick Quandt and</h1>
         <span className="about-span">

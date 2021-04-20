@@ -5,6 +5,7 @@
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0.5rem;
   height: 100vh;
+
   // background-color: blueviolet;
 }
 
@@ -15,20 +16,24 @@
 }
 
 #aboutcontent {
+  scroll-snap-align: start;
   // background-color: greenyellow;
 }
 
 #skillcontent {
+  scroll-snap-align: start;
   grid-column: 2/3;
   //  background-color: aquamarine;
 }
 
 #projectcontent {
+  scroll-snap-align: start;
   grid-column: 2/3;
   // background-color: palevioletred;
 }
 
 #contactcontent {
+  scroll-snap-align: start;
   grid-column: 2/3;
   // background-color: palegoldenrod;
 }

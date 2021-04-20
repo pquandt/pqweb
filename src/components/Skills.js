@@ -5,7 +5,7 @@ import skillpic from "../img/programming-amico-1.svg";
 
 export default function Skills() {
   return (
-    <section className="skills" id="skillcontent">
+    <section className="skills">
       <div>
         <h1>My Skills</h1>
       </div>

@@ -9,6 +9,8 @@
 html {
   font-size: 62.5%;
   height: 100vh;
+
+  scroll-snap-type: y mandatory;
   // background-color: cadetblue;
 }
 
@@ -16,4 +18,8 @@ body {
   background-color: $color-background;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.scrollsnap {
+  scroll-snap-type: mandatory;
 }
