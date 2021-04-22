@@ -1,4 +1,5 @@
 import React from "react";
+
 import avatar from "../img/patrick_business_1.jpg";
 
 export default function About() {

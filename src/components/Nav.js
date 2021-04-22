@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../img/pqlogo.svg";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
@@ -14,15 +15,16 @@ function Nav() {
 
       <nav className="nav-bar">
         <ul className="nav-list">
-          <li>
-            <a href="#aboutcontent">About</a>
-          </li>
-          <li>
-            <a href="#projectcontent">Projects</a>
-          </li>
-          <li>
-            <a href="#contactcontent">Contact</a>
-          </li>
+          <NavLink to="/"></NavLink>
+          <NavLink exact to="about" activeClassName="link-active">
+            <li>About</li>
+          </NavLink>
+          <NavLink to="projects" activeClassName="link-active">
+            <li>Project</li>
+          </NavLink>{" "}
+          <NavLink to="contact" activeClassName="link-active">
+            <li>Contact</li>
+          </NavLink>
         </ul>
       </nav>
     </div>

@@ -3,6 +3,12 @@
   margin-right: 1rem;
   margin-top: 10%;
 
+  .link-active li {
+    color: $color-highlight;
+    text-decoration: none;
+    list-style-type: "> ";
+  }
+
   &-bar {
     list-style: none;
   }
@@ -24,13 +30,11 @@
   &-list {
     font-size: $default-font-size;
     font-family: $primary-font;
-    color: $color-font;
     text-decoration: none;
     list-style: none;
     line-height: $default-font-size * 2;
 
     a:link {
-      color: $color-font;
       text-decoration: none;
     }
     a:visited {

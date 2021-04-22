@@ -9,16 +9,12 @@
 
 html {
   font-size: 62.5%;
-  height: 100vh;
-  scroll-snap-type: y mandatory; }
+  height: 100vh; }
 
 body {
   background-color: #f9f9f9;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-
-.scrollsnap {
-  scroll-snap-type: mandatory; }
 
 @keyframes moveInLeft {
   0% {
@@ -76,25 +72,14 @@ h1 {
   position: fixed;
   margin-left: 10%; }
 
-#aboutcontent {
-  scroll-snap-align: start; }
-
-#skillcontent {
-  scroll-snap-align: start;
-  grid-column: 2/3; }
-
-#projectcontent {
-  scroll-snap-align: start;
-  grid-column: 2/3; }
-
-#contactcontent {
-  scroll-snap-align: start;
-  grid-column: 2/3; }
-
 .nav {
   white-space: nowrap;
   margin-right: 1rem;
   margin-top: 10%; }
+  .nav .link-active li {
+    color: #0070ff;
+    text-decoration: none;
+    list-style-type: "> "; }
   .nav-bar {
     list-style: none; }
   .nav-logo {
@@ -109,12 +94,10 @@ h1 {
   .nav-list {
     font-size: 1.6rem;
     font-family: "Open Sans";
-    color: #131313;
     text-decoration: none;
     list-style: none;
     line-height: 3.2rem; }
     .nav-list a:link {
-      color: #131313;
       text-decoration: none; }
     .nav-list a:visited {
       color: #131313;
