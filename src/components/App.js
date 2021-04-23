@@ -4,8 +4,8 @@ import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import { CSSTransition } from "react-transition-group";
-import { gsap } from "gsap";
+// import { CSSTransition } from "react-transition-group";
+// import { gsap } from "gsap";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function Start() {

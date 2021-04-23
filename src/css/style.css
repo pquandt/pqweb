@@ -110,7 +110,7 @@ h1 {
       text-decoration: none; }
 
 .about {
-  padding-top: 15%;
+  padding-top: 10%;
   padding-left: 5%;
   height: 100vh; }
   .about-headline {
@@ -162,7 +162,7 @@ h1 {
   padding: 1rem; }
 
 .skills {
-  margin-top: 15%;
+  padding-top: 10%;
   padding-left: 5%;
   height: 100vh; }
   .skills-span {
@@ -195,6 +195,42 @@ h1 {
   .skills-text dt {
     font-weight: bold; }
   .skills-text dd {
+    margin-left: 3rem; }
+
+.projects {
+  padding-top: 10%;
+  padding-left: 5%;
+  height: 100vh; }
+  .projects-span {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem; }
+  .projects-blue-span {
+    color: #0070ff; }
+  .projects h1 {
+    margin-bottom: 4rem;
+    padding-left: 8rem; }
+  .projects-img {
+    width: 35rem; }
+  .projects-wrapper {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr; }
+
+.projects-text {
+  margin-top: 6rem;
+  margin-left: 4rem;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem; }
+  .projects-text h2 {
+    font-family: "Open Sans";
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem; }
+  .projects-text dt {
+    font-weight: bold; }
+  .projects-text dd {
     margin-left: 3rem; }
 
 .contact {
