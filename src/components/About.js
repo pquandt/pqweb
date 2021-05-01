@@ -29,7 +29,10 @@ export default function About() {
               <img src={avatar} alt="Patrick Quandt" />
             </div>
             <div className="about-img--side about-img--back">
-              <p>Gude!</p>
+              <div className="about-text about-text-img">
+                <h1>Gude!</h1>
+                <p> aus Frankfurt am Main.</p>
+              </div>
             </div>
           </div>
         </div>

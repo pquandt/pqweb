@@ -16,9 +16,7 @@ function Nav() {
       <nav className="nav-bar">
         <ul className="nav-list">
           <NavLink exact to="/" activeClassName="link-active">
-            <NavLink exact to="about" activeClassName="link-active">
-              <li>About</li>
-            </NavLink>
+            <li>About</li>
           </NavLink>
           <NavLink to="projects" activeClassName="link-active">
             <li>Projects</li>

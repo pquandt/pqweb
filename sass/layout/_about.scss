@@ -40,6 +40,13 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
+  &-img {
+    color: #fff;
+    position: relative;
+    top: 5.75rem;
+    left: 7rem;
+    width: 12rem;
+  }
 }
 
 .about-img {
@@ -49,14 +56,14 @@
 
   &--side {
     transition: all 0.8s ease;
-    perspective: 150rem;
-    -moz-perspective: 150rem;
+
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+    height: 23rem;
   }
 
   &--front {
@@ -67,6 +74,8 @@
     border-radius: 50%;
     margin-left: 1rem;
     height: 23rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
 
     & img {
       width: auto;
@@ -79,12 +88,10 @@
     height: 23rem;
     background-color: $color-highlight;
     border-radius: 50%;
-    text-align: center;
-    line-height: 23rem;
     margin-left: 1rem;
-    font-size: $headline-font-size;
-    color: #fff;
-    transform: rotateY(180deg);
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    transform: rotateY(-180deg);
   }
 
   &:hover &--front {
