@@ -15,9 +15,10 @@ function Nav() {
 
       <nav className="nav-bar">
         <ul className="nav-list">
-          <NavLink to="/"></NavLink>
-          <NavLink exact to="about" activeClassName="link-active">
-            <li>About</li>
+          <NavLink exact to="/" activeClassName="link-active">
+            <NavLink exact to="about" activeClassName="link-active">
+              <li>About</li>
+            </NavLink>
           </NavLink>
           <NavLink to="projects" activeClassName="link-active">
             <li>Projects</li>
