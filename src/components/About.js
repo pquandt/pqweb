@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Skills from "./Skills";
 import avatar from "../img/patrick_business_1.jpg";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
+  const refabout = useRef(null);
+  useEffect(() => {
+    const element = refabout.current;
+    gsap.fromTo(
+      element.querySelector(".about"),
+
+      {
+        opacity: 0,
+        y: -20,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        delay: 1,
+
+        scrollTrigger: {
+          trigger: element.querySelector(".about"),
+          start: "top top",
+          markers: true,
+          pin: true,
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+  }, []);
   return (
-    <div>
+    <div ref={refabout}>
       <section className="about">
         <div className="about-headline">
           <h1>Hello, I am Patrick Quandt and</h1>
