@@ -6,33 +6,32 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
-  const refabout = useRef(null);
+  const ref = useRef(null);
   useEffect(() => {
-    const element = refabout.current;
+    const element = ref.current;
     gsap.fromTo(
       element.querySelector(".about"),
 
       {
-        opacity: 0,
-        y: -20,
+        autoAlpha: 1,
       },
       {
-        opacity: 1,
-        y: 0,
-        delay: 1,
+        autoAlpha: 0,
 
         scrollTrigger: {
           trigger: element.querySelector(".about"),
           start: "top top",
-          markers: true,
+          end: "+=3000",
+          markers: false,
+          scrub: true,
           pin: true,
-          toggleActions: "play none none reverse",
+          anticipatePin: 1,
         },
       }
     );
   }, []);
   return (
-    <div ref={refabout}>
+    <div ref={ref}>
       <section className="about">
         <div className="about-headline">
           <h1>Hello, I am Patrick Quandt and</h1>

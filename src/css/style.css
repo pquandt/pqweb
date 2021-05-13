@@ -9,9 +9,7 @@
 
 html {
   font-size: 62.5%;
-  height: 100vh;
-  scroll-behavior: smooth;
-  overflow-y: scroll; }
+  height: 100vh; }
 
 body {
   background-color: #f9f9f9;
@@ -114,7 +112,8 @@ h1 {
 .about {
   padding-top: 10%;
   padding-left: 5%;
-  height: 100vh; }
+  height: 100vh;
+  position: absolute; }
   .about-headline {
     padding-left: 2.5rem;
     margin-bottom: 3rem; }
@@ -197,9 +196,10 @@ h1 {
   padding: 1rem; }
 
 .skills {
-  padding-top: 10%;
+  padding-top: 13.5%;
   padding-left: 5%;
-  height: 100vh; }
+  height: 100vh;
+  visibility: hidden; }
   .skills-span {
     font-family: "Space Grotesk", sans-serif;
     font-weight: 700;

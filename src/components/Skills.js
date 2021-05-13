@@ -6,36 +6,32 @@ gsap.registerPlugin(ScrollTrigger);
 // STILL ABOUT PAGE
 
 export default function Skills() {
-  const skillref = useRef(null);
+  const ref = useRef(null);
   useEffect(() => {
-    const element = skillref.current;
+    const element = ref.current;
     gsap.fromTo(
       element.querySelector(".skills"),
 
       {
-        opacity: 0,
-        y: -20,
+        autoAlpha: 0,
       },
       {
-        opacity: 1,
-        y: 0,
-        delay: 1,
+        autoAlpha: 1,
 
         scrollTrigger: {
           trigger: element.querySelector(".skills"),
-          start: "10px 10px",
+          start: "top top",
+          end: "+=3000",
           markers: false,
+          scrub: true,
           pin: true,
-          toggleActions: "play none none reverse",
-          // pinSpacing: false,
+          anticipatePin: 1,
         },
       }
     );
   }, []);
-
   return (
-    //first div only for ref
-    <div ref={skillref}>
+    <div ref={ref}>
       <section className="skills">
         <div>
           <h1>My Skills</h1>
