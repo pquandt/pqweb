@@ -1,5 +1,5 @@
 .projects {
-  // animation: blendIn 1s ease-in;
+  animation: blendIn 0.5s ease-in;
   padding-top: 10%;
   padding-left: 5%;
   height: 100vh;
@@ -13,17 +13,24 @@
   &-blue-span {
     color: $color-highlight;
   }
+
   & h1 {
     margin-bottom: 4rem;
     padding-left: 8rem;
   }
   &-img {
     width: 35rem;
+    margin-left: 5rem;
+    box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
   }
 
   &-wrapper {
     display: grid;
     grid-template-columns: 0.1fr 1fr 1fr;
+  }
+  ul {
+    list-style: none;
+    padding-top: 2rem;
   }
 }
 

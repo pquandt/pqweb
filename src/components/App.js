@@ -6,7 +6,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 // import { CSSTransition } from "react-transition-group";
 // import { gsap } from "gsap";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 function Start() {
   return (

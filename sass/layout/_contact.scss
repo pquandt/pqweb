@@ -1,8 +1,10 @@
 .contact {
-  // animation: blendIn 1s ease-in;
-  margin-top: 10%;
+  animation: blendIn 0.5s ease-in;
+  padding-top: 10%;
   padding-left: 5%;
   height: 100vh;
+  // position: absolute;
+  z-index: -2;
 
   &-span {
     font-family: $secondary-font, sans-serif;
@@ -15,6 +17,7 @@
   }
   & h1 {
     margin-bottom: 4rem;
+    padding-left: 8rem;
   }
   &-img {
     // float: right;
@@ -23,11 +26,12 @@
 }
 
 .contact-text {
+  margin-top: 6rem;
+  margin-left: 4rem;
   font-family: $primary-font;
-  font-size: 1.8rem;
+  font-size: $default-font-size;
   font-weight: 400;
-  line-height: 1.6;
-  width: 60rem;
+  line-height: $default-font-size * 1.5;
 
   & h2 {
     font-family: $primary-font;
