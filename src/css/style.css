@@ -113,7 +113,8 @@ h1 {
   padding-top: 10%;
   padding-left: 5%;
   height: 100vh;
-  position: absolute; }
+  position: absolute;
+  margin-left: -1.5rem; }
   .about-headline {
     padding-left: 2.5rem;
     margin-bottom: 3rem; }
@@ -196,10 +197,9 @@ h1 {
   padding: 1rem; }
 
 .skills {
-  padding-top: 13.5%;
+  padding-top: 13%;
   padding-left: 5%;
-  height: 100vh;
-  visibility: hidden; }
+  height: 100vh; }
   .skills-span {
     font-family: "Space Grotesk", sans-serif;
     font-weight: 700;

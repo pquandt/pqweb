@@ -21,7 +21,7 @@ export default function Skills() {
         scrollTrigger: {
           trigger: element.querySelector(".skills"),
           start: "top top",
-          end: "+=3000",
+          end: "+=60%",
           markers: false,
           scrub: true,
           pin: true,
