@@ -114,7 +114,8 @@ h1 {
   padding-left: 5%;
   height: 100vh;
   position: absolute;
-  margin-left: -1.5rem; }
+  margin-left: -0.6rem;
+  z-index: 10; }
   .about-headline {
     padding-left: 2.5rem;
     margin-bottom: 3rem; }
@@ -124,6 +125,10 @@ h1 {
     font-size: 3rem; }
   .about-blue-span {
     color: #0070ff; }
+
+.linebreakSpan {
+  display: block;
+  width: max-content; }
 
 .about-text {
   font-family: "Open Sans";

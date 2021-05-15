@@ -3,7 +3,8 @@
   padding-left: 5%;
   height: 100vh;
   position: absolute;
-  margin-left: -1.5rem;
+  margin-left: -0.6rem;
+  z-index: 10;
 
   &-headline {
     padding-left: 2.5rem;
@@ -19,6 +20,10 @@
   &-blue-span {
     color: $color-highlight;
   }
+}
+.linebreakSpan {
+  display: block;
+  width: max-content;
 }
 
 .about-text {

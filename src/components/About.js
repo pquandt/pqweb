@@ -46,12 +46,13 @@ export default function About() {
             <div className="about-text">
               <h2>Overall experience</h2>
 
-              <p>
-                Through my experience in the areas of video, audio and corporate
-                identity,{" "}
-                <span>
-                  I have a broad understanding of media projects from which my
-                  customers benefit.
+              <p className="linebreakSpan">
+                <span className="linebreakSpan">
+                  Through my experience in the areas of video, audio and
+                </span>
+                corporate identity, I have a broad understanding of media
+                <span className="linebreakSpan">
+                  projects from which my customers benefit.
                 </span>
               </p>
             </div>
