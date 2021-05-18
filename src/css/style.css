@@ -23,6 +23,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overscroll-behavior: none; }
+  body a:link {
+    text-decoration: none; }
+  body a:visited {
+    color: #131313;
+    text-decoration: none; }
+  body a:hover {
+    color: #0070ff;
+    text-decoration: none; }
+  body a:active {
+    color: #0070ff;
+    text-decoration: none; }
 
 @keyframes moveInLeft {
   0% {

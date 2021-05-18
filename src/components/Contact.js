@@ -10,7 +10,12 @@ export default function Contact() {
       <div className="skills-wrapper">
         <div className="vLine">4</div>
         <div className="skills-text">
-          <p>I dont know. Do I wanna tell this?</p>
+          <p>
+            Get in contact{" "}
+            <a target="_top" href="mailto:info@patrickquandt.de">
+              info@patrickquandt.de
+            </a>
+          </p>
         </div>
       </div>
     </section>

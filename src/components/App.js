@@ -7,6 +7,7 @@ import Contact from "./Contact";
 // import { CSSTransition } from "react-transition-group";
 // import { gsap } from "gsap";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import ScrollToTop from "./tools/ScrollToTop";
 
 function Start() {
   return (
@@ -18,6 +19,7 @@ function Start() {
         <div className="container">
           <div className="left-col"></div>
 
+          <ScrollToTop />
           <Switch>
             <Route path="/" exact component={About} />
             <Route path="/about" exact component={About} />

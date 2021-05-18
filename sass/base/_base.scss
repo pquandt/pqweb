@@ -22,4 +22,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overscroll-behavior: none;
+
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    color: $color-font;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $color-highlight;
+    text-decoration: none;
+  }
+  a:active {
+    color: $color-highlight;
+    text-decoration: none;
+  }
 }
