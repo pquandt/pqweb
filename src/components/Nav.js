@@ -14,6 +14,11 @@ function Nav() {
       </div>
 
       <nav className="nav-bar">
+        <div className="hamburger">
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
         <ul className="nav-list">
           <NavLink exact to="/" activeClassName="link-active">
             <li>About</li>
