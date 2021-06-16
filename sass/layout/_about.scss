@@ -107,3 +107,29 @@
     transform: rotateY(0);
   }
 }
+
+.scrollhint {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+
+  p {
+    font-family: $primary-font;
+    font-size: $small-font-size;
+    color: $color-highlight;
+    margin-top: 6.5rem;
+    animation: scrollhint 3s infinite ease-in-out;
+  }
+}
+
+@keyframes scrollhint {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}

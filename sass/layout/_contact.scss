@@ -23,6 +23,10 @@
     // float: right;
     margin-right: 4rem;
   }
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr;
+  }
 }
 
 .contact-text {
@@ -45,5 +49,10 @@
   }
   & dd {
     margin-left: 3rem;
+  }
+  a[href^="mailto:"] {
+    color: $color-highlight;
+    text-decoration: none;
+    font-size: 2rem;
   }
 }

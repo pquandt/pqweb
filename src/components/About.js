@@ -66,14 +66,9 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "10rem",
-          }}
-        >
+        <div className="scrollhint">
           <div className="mouse" />
+          <p>scroll down</p>
         </div>
       </section>
 

@@ -14,7 +14,7 @@ export default function Projects() {
           <div className="vLine">3</div>
 
           <div className="projects-text">
-            <h2>Moonport</h2>
+            <h2>Moonport App</h2>
             <p>
               A dezentralized mobile app for making calculations with your
               portfolio.
