@@ -4,6 +4,8 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 
+import gsap from "gsap";
+
 export default function AllPages() {
   return (
     <div>
