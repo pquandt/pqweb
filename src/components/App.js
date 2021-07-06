@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
+import AllPages from "./AllPages";
 import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
@@ -21,7 +22,7 @@ function Start() {
 
           <ScrollToTop />
           <Switch>
-            <Route path="/" exact component={About} />
+            <Route path="/" exact component={AllPages} />
             <Route path="/about" exact component={About} />
             <Route path="/skills" component={Skills} />
             <Route path="/projects" component={Projects} />
