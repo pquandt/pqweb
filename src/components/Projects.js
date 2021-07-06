@@ -1,8 +1,6 @@
 import React from "react";
 import moonport from "../img/moon.png";
 
-// STILL ABOUT PAGE
-
 export default function Projects() {
   return (
     <div>
