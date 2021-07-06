@@ -1,0 +1,58 @@
+.projects {
+  animation: blendIn 0.5s ease-in;
+  padding-top: 10%;
+  padding-left: 20%;
+  height: 100vh;
+
+  &-span {
+    font-family: $secondary-font, sans-serif;
+    font-weight: 700;
+    font-size: $default-font-size;
+  }
+
+  &-blue-span {
+    color: $color-highlight;
+  }
+
+  & h1 {
+    margin-bottom: 4rem;
+    padding-left: 8rem;
+  }
+  &-img {
+    width: 35rem;
+    margin-left: 5rem;
+    box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+  }
+
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr;
+  }
+  ul {
+    list-style: none;
+    padding-top: 2rem;
+  }
+}
+
+.projects-text {
+  margin-top: 6rem;
+  margin-left: 4rem;
+  font-family: $primary-font;
+  font-size: $default-font-size;
+  font-weight: 400;
+  line-height: $default-font-size * 1.5;
+
+  & h2 {
+    font-family: $primary-font;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  & dt {
+    font-weight: bold;
+  }
+  & dd {
+    margin-left: 3rem;
+  }
+}

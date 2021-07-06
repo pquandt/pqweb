@@ -1,0 +1,27 @@
+.card {
+  background-color: $color-background;
+  color: $color-font;
+  border: 1px solid $color-background;
+  padding: 2rem;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.8s;
+
+  &-Headline {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+
+  &-list {
+    padding: 0 2.5rem 0;
+    list-style-type: none;
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  &:hover {
+    transform: translateY(-0.8rem);
+    box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.1);
+  }
+}

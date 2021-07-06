@@ -1,0 +1,135 @@
+.about {
+  padding-top: 10%;
+  padding-left: 15%;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+
+  &-headline {
+    padding-left: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  &-span {
+    font-family: $secondary-font, sans-serif;
+    font-weight: 700;
+    font-size: $headline-font-size;
+  }
+
+  &-blue-span {
+    color: $color-highlight;
+  }
+}
+.linebreakSpan {
+  display: block;
+  width: max-content;
+}
+
+.about-text {
+  font-family: $primary-font;
+  font-size: $default-font-size;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0.5rem 2rem 0 0;
+  margin-right: 2rem;
+
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 0.1fr 2fr 1fr;
+    grid-template-rows: 15rem;
+  }
+
+  & h2 {
+    font-family: $primary-font;
+    font-size: $default-font-size;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  &-img {
+    color: #fff;
+    position: relative;
+    top: 5.75rem;
+    left: 7rem;
+    width: 12rem;
+  }
+}
+
+.about-img {
+  position: relative;
+  top: -10rem;
+  height: 23rem;
+
+  &--side {
+    transition: all 0.8s ease;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+    height: 23rem;
+  }
+
+  &--front {
+    top: 0;
+    width: 23rem;
+    height: 23rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 1rem;
+    height: 23rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+
+    & img {
+      width: auto;
+      height: 100%;
+      margin-left: -5rem;
+    }
+  }
+  &--back {
+    width: 23rem;
+    height: 23rem;
+    background-color: $color-highlight;
+    border-radius: 50%;
+    margin-left: 1rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &--back {
+    transform: rotateY(0);
+  }
+}
+
+.scrollhint {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+
+  p {
+    font-family: $primary-font;
+    font-size: $small-font-size;
+    color: $color-highlight;
+    margin-top: 6.5rem;
+    animation: scrollhint 3s infinite ease-in-out;
+  }
+}
+
+@keyframes scrollhint {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}

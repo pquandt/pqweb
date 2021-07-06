@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  margin: 0 10rem 0;
+  grid-template-columns: 0.5fr 3fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0.5rem;
+  height: 100vh;
+
+  // background-color: blueviolet;
+}
+
+#navcontent {
+  // background-color: pink;
+  position: fixed;
+  margin-left: 10%;
+}
+
+// #aboutcontent {
+//   // background-color: greenyellow;
+// }
+
+// #skillcontent {
+//   grid-column: 2/3;
+//   //  background-color: aquamarine;
+// }
+
+// #projectcontent {
+//   grid-column: 2/3;
+//   // background-color: palevioletred;
+// }
+
+// #contactcontent {
+//   grid-column: 2/3;
+//   // background-color: palegoldenrod;
+// }

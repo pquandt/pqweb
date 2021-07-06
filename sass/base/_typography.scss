@@ -1,10 +1,15 @@
 @import "../abstracts/variables";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,800;0,900;1,100;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Grotesk:wght@300&display=swap");
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: $primary-font, sans-serif;
   font-weight: 400;
-  color: $color-grey-light;
-  padding: 3rem;
+  color: $color-font;
 }
 
+h1 {
+  font-family: $secondary-font, sans-serif;
+  font-weight: 700;
+  font-size: $headline-font-size;
+}
