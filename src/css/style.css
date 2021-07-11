@@ -247,9 +247,11 @@ h1 {
     margin-top: 2rem;
     margin-bottom: 1.5rem; }
   .skills-text dt {
-    font-weight: bold; }
+    font-weight: bold;
+    padding-bottom: 0.2rem; }
   .skills-text dd {
-    margin-left: 3rem; }
+    margin-left: 3rem;
+    padding-bottom: 0.6rem; }
 
 .projects {
   padding-top: 5%;
