@@ -10,6 +10,7 @@
 html {
   font-size: 62.5%;
   height: 100vh;
+  scroll-behavior: smooth;
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
@@ -23,6 +24,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overscroll-behavior: none; }
   body a:link {
+    color: #131313;
     text-decoration: none; }
   body a:visited {
     color: #131313;
@@ -113,14 +115,15 @@ h1 {
     .nav .smicons a:not(:last-child) {
       padding-right: 1rem; }
   .nav-bar {
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    padding-bottom: 2rem; }
     .nav-bar a:not(:last-child) {
       padding-right: 2.5rem; }
 
 .about {
   background-color: #f7f9ff;
   padding-top: 10%;
-  padding-left: 14%; }
+  padding-left: 20%; }
   .about-headline {
     padding-left: 8rem;
     margin-bottom: 5rem; }
@@ -139,7 +142,8 @@ h1 {
   font-family: "Open Sans";
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.6; }
+  line-height: 1.6;
+  margin-left: 4rem; }
   .about-text-wrapper {
     display: grid;
     grid-template-columns: 0.1fr 1fr 1fr; }
@@ -152,7 +156,7 @@ h1 {
     color: #fff;
     position: relative;
     top: 5.75rem;
-    left: 7rem;
+    left: 3rem;
     width: 12rem; }
 
 .about-img {
@@ -196,29 +200,10 @@ h1 {
   .about-img:hover .about-img--back {
     transform: rotateY(0); }
 
-.scrollhint {
-  display: flex;
-  justify-content: center;
-  margin-top: 10rem; }
-  .scrollhint p {
-    font-family: "Open Sans";
-    font-size: 1.3rem;
-    color: #0070ff;
-    margin-top: 6.5rem;
-    animation: scrollhint 3s infinite ease-in-out; }
-
-@keyframes scrollhint {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0.3; }
-  100% {
-    opacity: 1; } }
-
 .skills {
   background-color: #f7f9ff;
   padding-top: 5%;
-  padding-left: 14%;
+  padding-left: 20%;
   padding-bottom: 5%; }
   .skills-span {
     font-family: "Space Grotesk", sans-serif;
@@ -255,7 +240,8 @@ h1 {
 
 .projects {
   padding-top: 5%;
-  padding-left: 14%; }
+  padding-left: 20%;
+  padding-bottom: 5%; }
   .projects-span {
     font-family: "Space Grotesk", sans-serif;
     font-weight: 700;
@@ -267,12 +253,15 @@ h1 {
     padding-left: 8rem; }
   .projects-img {
     width: 35rem;
-    margin-left: 5rem;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-  .projects-wrapper {
+    margin-left: 5rem; }
+  .projects-wrapper-site {
     display: grid;
-    grid-template-columns: 0.1fr 1fr 1fr;
-    padding-bottom: 10%; }
+    grid-template-columns: 1fr 1fr 0.1fr;
+    padding-bottom: 5%;
+    padding-right: 28%; }
+  .projects-wrapper-phone {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 2fr; }
   .projects ul {
     list-style: none;
     padding-top: 2rem; }
@@ -297,7 +286,7 @@ h1 {
 .contact {
   background-color: #0070ff;
   padding-top: 2%;
-  padding-left: 14%; }
+  padding-left: 20%; }
   .contact-span {
     font-family: "Space Grotesk", sans-serif;
     font-weight: 700;

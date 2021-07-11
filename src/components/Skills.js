@@ -27,10 +27,7 @@ export default function Skills() {
             <dt>UI 1:1</dt>
             <dd>I stick to your design</dd>
             <dt>Crossmedia skilled</dt>
-            <dd>
-              I worked in different fields of media (audio, video, production)
-              for years.
-            </dd>
+            <dd>I worked in different fields of media for years.</dd>
           </dl>
         </div>
         <div className="skill-img">

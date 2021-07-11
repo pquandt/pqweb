@@ -1,7 +1,7 @@
 .about {
   background-color: #f7f9ff;
   padding-top: 10%;
-  padding-left: 14%;
+  padding-left: 20%;
 
   &-headline {
     padding-left: 8rem;
@@ -28,6 +28,7 @@
   font-size: $default-font-size;
   font-weight: 400;
   line-height: 1.6;
+  margin-left: 4rem;
 
   &-wrapper {
     display: grid;
@@ -44,7 +45,7 @@
     color: #fff;
     position: relative;
     top: 5.75rem;
-    left: 7rem;
+    left: 3rem;
     width: 12rem;
   }
 }
@@ -99,31 +100,5 @@
 
   &:hover &--back {
     transform: rotateY(0);
-  }
-}
-
-.scrollhint {
-  display: flex;
-  justify-content: center;
-  margin-top: 10rem;
-
-  p {
-    font-family: $primary-font;
-    font-size: $small-font-size;
-    color: $color-highlight;
-    margin-top: 6.5rem;
-    animation: scrollhint 3s infinite ease-in-out;
-  }
-}
-
-@keyframes scrollhint {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
   }
 }
