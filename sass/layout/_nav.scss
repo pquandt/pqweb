@@ -1,7 +1,11 @@
+.navbox {
+  box-shadow: 0 2px 11px 0 rgba(204, 204, 204, 0.5);
+}
 .nav {
   background-color: #ffffff;
   display: flex;
-  margin: 2% 14% 0 14%;
+  margin: 0 14% 5px 14%;
+  padding-top: 2%;
   white-space: nowrap;
   justify-content: space-between;
 
@@ -15,7 +19,9 @@
     font-weight: 700;
   }
   &-logo img {
-    margin-top: -0.7rem;
+    margin-top: -0.55rem;
+    width: 4.5rem;
+    height: 4.4rem;
   }
   &-left {
     display: flex;
@@ -23,19 +29,12 @@
 
   &-right {
     display: block;
-  }
-
-  .smicons {
-    text-align: right;
-
-    a:not(:last-child) {
-      padding-right: 1rem;
-    }
+    padding-top: 1.4rem;
   }
 
   &-bar {
-    font-size: 1.8rem;
-    padding-bottom: 2rem;
+    font-size: $default-font-size;
+    padding-bottom: 2.5rem;
     a:not(:last-child) {
       padding-right: 2.5rem;
     }
