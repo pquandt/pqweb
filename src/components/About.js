@@ -38,10 +38,6 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="scrollhint">
-        <div className="mouse" />
-        <p>scroll down</p>
-      </div>
     </section>
   );
 }

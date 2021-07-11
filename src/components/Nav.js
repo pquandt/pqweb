@@ -1,36 +1,30 @@
 import React from "react";
-import logo from "../img/pqlogo.svg";
-import { NavLink } from "react-router-dom";
+import logo from "../img/pqlogo.png";
 
 function Nav() {
   return (
     <div className="nav">
-      <div className="nav-logo">
-        <img src={logo} alt="Logo" />
-      </div>
-      <div className="nav-logo-subtext">
-        Patrick Quandt <br />
-        Frontend Developer
-      </div>
-
-      <nav className="nav-bar">
-        <div className="hamburger">
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
+      <div className="nav-left">
+        <div className="nav-logo">
+          <img src={logo} alt="Logo" />
         </div>
-        <ul className="nav-list">
-          <NavLink exact to="/" activeClassName="link-active">
-            <li>About</li>
-          </NavLink>
-          <NavLink to="projects" activeClassName="link-active">
-            <li>Projects</li>
-          </NavLink>{" "}
-          <NavLink to="contact" activeClassName="link-active">
-            <li>Contact</li>
-          </NavLink>
-        </ul>
-      </nav>
+        <div className="nav-logo-subtext">
+          Patrick Quandt <br />
+          Frontend Developer
+        </div>
+      </div>
+      <div className="nav-right">
+        <div className="smicons">
+          <a href="#mail">M</a>
+          <a href="#in">L</a>
+          <a href="#gi">Git</a>
+        </div>
+        <nav className="nav-bar">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </div>
   );
 }

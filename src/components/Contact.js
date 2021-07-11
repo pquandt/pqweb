@@ -8,14 +8,13 @@ export default function Contact() {
       </div>
 
       <div className="contact-wrapper">
-        <div className="vLine">4</div>
-        <div className="contact-text">
+        <div>
           <a
             href="mailto:patrick@moonport.app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            patrick@moonport.app
+            <div className="contact-button-mail">Email</div>
           </a>
         </div>
       </div>

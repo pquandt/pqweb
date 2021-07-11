@@ -1,8 +1,6 @@
 .projects {
-  animation: blendIn 0.5s ease-in;
-  padding-top: 10%;
-  padding-left: 10%;
-  height: 100vh;
+  padding-top: 5%;
+  padding-left: 14%;
 
   &-span {
     font-family: $secondary-font, sans-serif;
@@ -27,6 +25,7 @@
   &-wrapper {
     display: grid;
     grid-template-columns: 0.1fr 1fr 1fr;
+    padding-bottom: 10%;
   }
   ul {
     list-style: none;

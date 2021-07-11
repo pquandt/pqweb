@@ -1,11 +1,7 @@
 .contact {
-  animation: blendIn 0.5s ease-in;
-  padding-top: 10%;
-  padding-left: 10%;
-  height: 100vh;
-
-  // position: absolute;
-  z-index: -2;
+  background-color: #0070ff;
+  padding-top: 2%;
+  padding-left: 14%;
 
   &-span {
     font-family: $secondary-font, sans-serif;
@@ -17,43 +13,25 @@
     color: $color-highlight;
   }
   & h1 {
-    margin-bottom: 4rem;
-    padding-left: 8rem;
+    color: #ffffff;
+    padding-bottom: 2rem;
   }
-  &-img {
-    // float: right;
-    margin-right: 4rem;
-  }
+
   &-wrapper {
-    display: grid;
-    grid-template-columns: 0.1fr 1fr 1fr;
+    display: block;
+    padding-bottom: 10rem;
   }
 }
 
-.contact-text {
-  margin-top: 6rem;
-  margin-left: 4rem;
+.contact-button-mail {
+  background-color: #ffffff;
+  padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+  width: 8rem;
+  height: 2.2rem;
+  border-radius: 0.5rem;
   font-family: $primary-font;
+  color: #0070ff;
   font-size: $default-font-size;
-  font-weight: 400;
-  line-height: $default-font-size * 1.5;
-
-  & h2 {
-    font-family: $primary-font;
-    font-size: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  & dt {
-    font-weight: bold;
-  }
-  & dd {
-    margin-left: 3rem;
-  }
-  a[href^="mailto:"] {
-    color: $color-highlight;
-    text-decoration: none;
-    font-size: 2rem;
-  }
+  text-align: center;
+  font-weight: 800;
 }

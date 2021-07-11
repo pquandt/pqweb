@@ -26,9 +26,6 @@ export default function Skills() {
 
             <dt>UI 1:1</dt>
             <dd>I stick to your design</dd>
-
-            <dt>Dynamic</dt>
-            <dd>Today a website has to feel organic</dd>
           </dl>
         </div>
         <div className="skill-img">
