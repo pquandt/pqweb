@@ -11,7 +11,7 @@ export default function Skills() {
       </div>
 
       <div className="skills-wrapper">
-        <div className="vLine">2</div>
+        <div className="vLine"></div>
         <div className="skills-text">
           <dl>
             <dt>Frontend Developement</dt>

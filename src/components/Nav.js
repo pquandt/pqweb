@@ -15,15 +15,15 @@ function Nav() {
           </div>
         </div>
         <div className="nav-right">
-          {/* <div className="smicons">
-          <a href="#mail">M</a>
-          <a href="#in">L</a>
-          <a href="#gi">Git</a>
-        </div> */}
           <nav className="nav-bar">
             <a href="#aboutsection">About</a>
             <a href="#projectssection">Projects</a>
             <a href="#contactsection">Contact</a>
+            <div className="burgermenu">
+              <div className="line1"></div>
+              <div className="line2"></div>
+              <div className="line3"></div>
+            </div>
           </nav>
         </div>
       </div>

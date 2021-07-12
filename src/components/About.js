@@ -13,7 +13,7 @@ export default function About() {
         </div>
 
         <div className="about-text-wrapper">
-          <div className="vLine">1</div>
+          <div className="vLine"></div>
           <div className="about-text">
             <h2>Overall experience</h2>
 

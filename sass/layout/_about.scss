@@ -101,4 +101,25 @@
   &:hover &--back {
     transform: rotateY(0);
   }
+  &-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding-left: 1rem;
+    &-headline {
+      padding-left: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    &-text {
+      margin-left: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    &-img {
+      display: none;
+    }
+  }
 }

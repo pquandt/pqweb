@@ -26,7 +26,7 @@ export default function Projects() {
             </p>
           </div>
 
-          <div className="vLine">3</div>
+          <div className="vLine"></div>
         </div>
         <div className="projects-wrapper-phone">
           <div className="vLine"></div>

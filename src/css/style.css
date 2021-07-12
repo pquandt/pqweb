@@ -106,10 +106,10 @@ h1 {
 .nav {
   background-color: #ffffff;
   display: flex;
-  margin: 0 14% 5px 14%;
+  margin-bottom: 5px;
   padding-top: 2%;
   white-space: nowrap;
-  justify-content: space-between; }
+  justify-content: space-around; }
   .nav-logo {
     overflow: visible;
     padding-right: 2.3rem; }
@@ -130,6 +130,30 @@ h1 {
     padding-bottom: 2.5rem; }
     .nav-bar a:not(:last-child) {
       padding-right: 2.5rem; }
+
+.burgermenu {
+  display: none; }
+
+.burgermenu div {
+  display: block;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: #0070ff;
+  margin: 0.5rem; }
+
+@media screen and (max-width: 768px) {
+  .burgermenu {
+    display: block;
+    position: absolute;
+    top: 1.4rem;
+    right: 0.1rem; }
+  .nav {
+    justify-content: flex-start;
+    padding-left: 3rem; }
+    .nav-logo-subtext {
+      display: none; }
+  .nav-right {
+    display: none; } }
 
 .about {
   background-color: #f7f9ff;
@@ -210,6 +234,20 @@ h1 {
     transform: rotateY(-180deg); }
   .about-img:hover .about-img--back {
     transform: rotateY(0); }
+  .about-img-mobile {
+    display: none; }
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding-left: 1rem; }
+    .about-headline {
+      padding-left: 2rem;
+      margin-bottom: 5rem; }
+    .about-text {
+      margin-left: 0.5rem;
+      margin-bottom: 2rem; }
+    .about-img {
+      display: none; } }
 
 .skills {
   background-color: #f7f9ff;
@@ -248,6 +286,18 @@ h1 {
   .skills-text dd {
     margin-left: 3rem;
     padding-bottom: 0.6rem; }
+
+@media screen and (max-width: 768px) {
+  .skills {
+    padding-left: 1rem; }
+    .skills-headline {
+      padding-left: 2rem;
+      margin-bottom: 5rem; }
+    .skills-text {
+      margin-left: 0.5rem;
+      margin-bottom: 2rem; }
+    .skills-img {
+      display: none; } }
 
 .projects {
   padding-top: 5%;
@@ -294,6 +344,18 @@ h1 {
   .projects-text dd {
     margin-left: 3rem; }
 
+@media screen and (max-width: 768px) {
+  .projects {
+    padding-left: 1rem; }
+    .projects-headline {
+      padding-left: 2rem;
+      margin-bottom: 5rem; }
+    .projects-text {
+      margin-left: 0.5rem;
+      margin-bottom: 2rem; }
+    .projects-img {
+      display: none; } }
+
 .contact {
   background-color: #0070ff;
   padding-top: 2%;
@@ -322,6 +384,11 @@ h1 {
   font-size: 1.4rem;
   text-align: center;
   font-weight: 800; }
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding-top: 2rem;
+    padding-left: 3rem; } }
 
 .card {
   background-color: #f9f9f9;

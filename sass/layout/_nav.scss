@@ -4,10 +4,10 @@
 .nav {
   background-color: #ffffff;
   display: flex;
-  margin: 0 14% 5px 14%;
+  margin-bottom: 5px;
   padding-top: 2%;
   white-space: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
 
   &-logo {
     overflow: visible;
@@ -38,5 +38,37 @@
     a:not(:last-child) {
       padding-right: 2.5rem;
     }
+  }
+}
+
+.burgermenu {
+  display: none;
+}
+
+.burgermenu div {
+  display: block;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: $color-highlight;
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .burgermenu {
+    display: block;
+    position: absolute;
+    top: 1.4rem;
+    right: 0.1rem;
+  }
+
+  .nav {
+    justify-content: flex-start;
+    padding-left: 3rem;
+    &-logo-subtext {
+      display: none;
+    }
+  }
+  .nav-right {
+    display: none;
   }
 }
