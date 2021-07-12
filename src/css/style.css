@@ -419,9 +419,13 @@ h1 {
     color: #131313; }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    padding-left: 2rem; }
   .contact {
     padding-top: 2rem;
-    padding-left: 3rem; } }
+    padding-left: 2rem; }
+    .contact-wrapper {
+      justify-content: center; } }
 
 .card {
   background-color: #f7f9ff;
