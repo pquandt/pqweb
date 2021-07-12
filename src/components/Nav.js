@@ -19,11 +19,6 @@ function Nav() {
             <a href="#aboutsection">About</a>
             <a href="#projectssection">Projects</a>
             <a href="#contactsection">Contact</a>
-            <div className="burgermenu">
-              <div className="line1"></div>
-              <div className="line2"></div>
-              <div className="line3"></div>
-            </div>
           </nav>
         </div>
       </div>
