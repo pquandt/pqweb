@@ -17,9 +17,9 @@ html {
   user-select: none; /* Standard */
 }
 
-// html::-webkit-scrollbar {
-//   display: none;
-// }
+html::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   -webkit-font-smoothing: antialiased;
