@@ -1,63 +1,74 @@
+.navbox {
+  box-shadow: 0 2px 11px 0 rgba(204, 204, 204, 0.5);
+}
 .nav {
+  background-color: #ffffff;
+  display: flex;
+  margin-bottom: 5px;
+  padding-top: 2%;
   white-space: nowrap;
-  margin-right: 1rem;
-  margin-top: 10%;
-
-  .link-active li {
-    color: $color-highlight;
-    text-decoration: none;
-    list-style-type: "> ";
-  }
-
-  &-bar {
-    list-style: none;
-  }
+  justify-content: space-around;
 
   &-logo {
     overflow: visible;
+    padding-right: 2.3rem;
   }
 
   &-logo-subtext {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    margin-bottom: 2.3rem;
   }
   &-logo img {
-    width: 7rem;
-    margin-left: -1rem;
+    margin-top: 0.3rem;
+    width: 4.5rem;
+    height: 4.4rem;
+  }
+  &-left {
+    display: flex;
   }
 
-  &-list {
-    font-size: $default-font-size;
-    font-family: $primary-font;
-    text-decoration: none;
-    list-style: none;
-    line-height: $default-font-size * 2;
+  &-right {
+    display: block;
+    padding-top: 1.4rem;
+  }
 
-    a:link {
-      color: black;
-      text-decoration: none;
-    }
-    a:visited {
-      color: $color-font;
-      text-decoration: none;
-    }
-    a:hover {
-      color: $color-highlight;
-      text-decoration: none;
-    }
-    a:active {
-      color: $color-highlight;
-      text-decoration: none;
+  &-bar {
+    font-size: $default-font-size;
+    padding-bottom: 2.5rem;
+    a:not(:last-child) {
+      padding-right: 2.5rem;
     }
   }
 }
 
-@media screen and(max-width:768px) {
-  .line {
-    width: 3rem;
-    height: 0.3rem;
-    background-color: $color-highlight;
-    margin: 0.5rem;
+.burgermenu {
+  display: none;
+}
+
+.burgermenu div {
+  display: block;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: $color-highlight;
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .burgermenu {
+    display: block;
+    position: absolute;
+    top: 1.4rem;
+    right: 0.1rem;
+  }
+
+  .nav {
+    justify-content: flex-start;
+    padding-left: 3rem;
+    &-logo-subtext {
+      display: none;
+    }
+  }
+  .nav-right {
+    display: none;
   }
 }

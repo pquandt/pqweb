@@ -1,8 +1,7 @@
 .projects {
-  animation: blendIn 0.5s ease-in;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 20%;
-  height: 100vh;
+  padding-bottom: 5%;
 
   &-span {
     font-family: $secondary-font, sans-serif;
@@ -21,12 +20,17 @@
   &-img {
     width: 35rem;
     margin-left: 5rem;
-    box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
   }
 
-  &-wrapper {
+  &-wrapper-site {
     display: grid;
-    grid-template-columns: 0.1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.1fr;
+    padding-bottom: 5%;
+    padding-right: 28%;
+  }
+  &-wrapper-phone {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 2fr;
   }
   ul {
     list-style: none;
@@ -54,5 +58,23 @@
   }
   & dd {
     margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    padding-left: 1rem;
+    &-headline {
+      padding-left: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    &-text {
+      margin-left: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    &-img {
+      display: none;
+    }
   }
 }

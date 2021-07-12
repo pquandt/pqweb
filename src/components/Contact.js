@@ -2,25 +2,24 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div>
-      <section className="contact">
+    <section id="contactsection">
+      <div className="contact">
         <div>
           <h1>Contact</h1>
         </div>
 
         <div className="contact-wrapper">
-          <div className="vLine">4</div>
-          <div className="contact-text">
+          <div>
             <a
               href="mailto:patrick@moonport.app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              patrick@moonport.app
+              <div className="contact-button-mail">Email</div>
             </a>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

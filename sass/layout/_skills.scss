@@ -1,9 +1,8 @@
 .skills {
-  padding-top: 10%;
-  padding-left: 10%;
-  height: 100vh;
-  position: absolute;
-  z-index: -2;
+  background-color: #f7f9ff;
+  padding-top: 5%;
+  padding-left: 20%;
+  padding-bottom: 5%;
 
   &-span {
     font-family: $secondary-font, sans-serif;
@@ -16,7 +15,6 @@
   }
 
   & h1 {
-    margin-bottom: 4rem;
     padding-left: 8rem;
   }
   &-img {
@@ -46,8 +44,28 @@
 
   & dt {
     font-weight: bold;
+    padding-bottom: 0.2rem;
   }
   & dd {
     margin-left: 3rem;
+    padding-bottom: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills {
+    padding-left: 1rem;
+    &-headline {
+      padding-left: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    &-text {
+      margin-left: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    &-img {
+      display: none;
+    }
   }
 }

@@ -1,33 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import skillpic from "../img/programming-amico-1.svg";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+
 // STILL ABOUT PAGE
 
 export default function Skills() {
-  useEffect(() => {
-    gsap.fromTo(
-      ".skills",
-
-      {
-        autoAlpha: 0,
-      },
-      {
-        autoAlpha: 1,
-
-        scrollTrigger: {
-          trigger: ".skills",
-          start: "top top",
-          end: "+=60%",
-          markers: false,
-          scrub: true,
-          pin: true,
-          anticipatePin: 1,
-        },
-      }
-    );
-  }, []);
   return (
     <section className="skills">
       <div>
@@ -35,7 +11,7 @@ export default function Skills() {
       </div>
 
       <div className="skills-wrapper">
-        <div className="vLine">2</div>
+        <div className="vLine"></div>
         <div className="skills-text">
           <dl>
             <dt>Frontend Developement</dt>
@@ -50,9 +26,8 @@ export default function Skills() {
 
             <dt>UI 1:1</dt>
             <dd>I stick to your design</dd>
-
-            <dt>Dynamic</dt>
-            <dd>Today a website has to feel organic</dd>
+            <dt>Crossmedia skilled</dt>
+            <dd>I worked in different fields of media for years.</dd>
           </dl>
         </div>
         <div className="skill-img">

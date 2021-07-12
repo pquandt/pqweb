@@ -1,37 +1,10 @@
-import React, { useEffect } from "react";
-import Skills from "./Skills";
+import React from "react";
 import avatar from "../img/patrick_business_1.jpg";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
-  useEffect(() => {
-    gsap.fromTo(
-      ".about",
-
-      {
-        autoAlpha: 1,
-      },
-      {
-        autoAlpha: 0,
-
-        scrollTrigger: {
-          trigger: ".about",
-          start: "top top",
-          end: "+=60%",
-          markers: false,
-          scrub: true,
-          pin: true,
-          anticipatePin: 1,
-        },
-      }
-    );
-  }, []);
-
   return (
-    <div>
-      <section className="about">
+    <section id="aboutsection">
+      <div className="about">
         <div className="about-headline">
           <h1>Hello, I am Patrick Quandt and</h1>
           <span className="about-span">
@@ -40,7 +13,7 @@ export default function About() {
         </div>
 
         <div className="about-text-wrapper">
-          <div className="vLine">1</div>
+          <div className="vLine"></div>
           <div className="about-text">
             <h2>Overall experience</h2>
 
@@ -66,13 +39,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="scrollhint">
-          <div className="mouse" />
-          <p>scroll down</p>
-        </div>
-      </section>
-
-      <Skills />
-    </div>
+      </div>
+    </section>
   );
 }

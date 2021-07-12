@@ -1,13 +1,11 @@
 .about {
-  padding-top: 10%;
-  padding-left: 15%;
-  height: 100vh;
-  position: absolute;
-  z-index: 10;
+  background-color: #f7f9ff;
+  padding-top: 5%;
+  padding-left: 20%;
 
   &-headline {
-    padding-left: 2.5rem;
-    margin-bottom: 3rem;
+    padding-left: 8rem;
+    margin-bottom: 5rem;
   }
 
   &-span {
@@ -30,13 +28,11 @@
   font-size: $default-font-size;
   font-weight: 400;
   line-height: 1.6;
-  padding: 0.5rem 2rem 0 0;
-  margin-right: 2rem;
+  margin-left: 4rem;
 
   &-wrapper {
     display: grid;
-    grid-template-columns: 0.1fr 2fr 1fr;
-    grid-template-rows: 15rem;
+    grid-template-columns: 0.1fr 1fr 1fr;
   }
 
   & h2 {
@@ -49,7 +45,7 @@
     color: #fff;
     position: relative;
     top: 5.75rem;
-    left: 7rem;
+    left: 3rem;
     width: 12rem;
   }
 }
@@ -58,7 +54,6 @@
   position: relative;
   top: -10rem;
   height: 23rem;
-
   &--side {
     transition: all 0.8s ease;
 
@@ -106,30 +101,25 @@
   &:hover &--back {
     transform: rotateY(0);
   }
-}
-
-.scrollhint {
-  display: flex;
-  justify-content: center;
-  margin-top: 10rem;
-
-  p {
-    font-family: $primary-font;
-    font-size: $small-font-size;
-    color: $color-highlight;
-    margin-top: 6.5rem;
-    animation: scrollhint 3s infinite ease-in-out;
+  &-mobile {
+    display: none;
   }
 }
 
-@keyframes scrollhint {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
+@media screen and (max-width: 768px) {
+  .about {
+    padding-left: 1rem;
+    &-headline {
+      padding-left: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    &-text {
+      margin-left: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    &-img {
+      display: none;
+    }
   }
 }
