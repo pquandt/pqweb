@@ -13,8 +13,6 @@ html {
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
   -webkit-user-select: none;
   /* Safari */
   -moz-user-select: none;
@@ -241,13 +239,32 @@ h1 {
   .about {
     padding-left: 1rem; }
     .about-headline {
+      padding-right: 1rem;
       padding-left: 2rem;
       margin-bottom: 5rem; }
+    .about .linebreakSpan {
+      width: fit-content;
+      overflow-wrap: normal; }
     .about-text {
+      overflow-wrap: normal;
       margin-left: 0.5rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      grid-column: 2 / 3;
+      grid-row: 2; }
+      .about-text-wrapper {
+        grid-template-columns: 0.1fr 1fr;
+        grid-template-rows: 1fr 0.5fr; }
+      .about-text-img {
+        margin-left: 3rem; }
+    .about .vLine {
+      grid-column: 1;
+      grid-row: 2; }
     .about-img {
-      display: none; } }
+      display: block;
+      grid-row: 1;
+      top: 0.1rem;
+      left: 7.6rem;
+      padding-bottom: 1rem; } }
 
 .skills {
   background-color: #f7f9ff;
@@ -290,9 +307,8 @@ h1 {
 @media screen and (max-width: 768px) {
   .skills {
     padding-left: 1rem; }
-    .skills-headline {
-      padding-left: 2rem;
-      margin-bottom: 5rem; }
+    .skills h1 {
+      padding-left: 4rem; }
     .skills-text {
       margin-left: 0.5rem;
       margin-bottom: 2rem; }
@@ -346,15 +362,42 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .projects {
-    padding-left: 1rem; }
-    .projects-headline {
-      padding-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .projects h1 {
+      padding-left: 4rem;
       margin-bottom: 5rem; }
     .projects-text {
+      margin-top: 0;
       margin-left: 0.5rem;
-      margin-bottom: 2rem; }
-    .projects-img {
-      display: none; } }
+      grid-column: 1;
+      grid-row: 2; }
+    .projects-wrapper-site {
+      padding-left: 4rem;
+      grid-template-columns: 1fr 0.1fr;
+      grid-template-rows: 0.5fr 1fr; }
+      .projects-wrapper-site .vLine {
+        grid-column: 2;
+        grid-row: 2; }
+      .projects-wrapper-site img {
+        margin-right: 6rem;
+        width: 20rem; }
+    .projects-wrapper-phone {
+      grid-template-columns: 0.1fr 1fr;
+      grid-template-rows: 0.5fr 1fr; }
+      .projects-wrapper-phone .vLine {
+        grid-column: 1;
+        grid-row: 1; }
+      .projects-wrapper-phone .phoneimg {
+        padding-left: 5rem;
+        grid-column: 2;
+        grid-row: 2; }
+      .projects-wrapper-phone img {
+        width: 20rem; }
+      .projects-wrapper-phone .projects-text {
+        padding-right: 4rem;
+        grid-column: 2;
+        grid-row: 1 /2; } }
 
 .contact {
   background-color: #0070ff;

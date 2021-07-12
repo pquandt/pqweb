@@ -55,9 +55,8 @@
 @media screen and (max-width: 768px) {
   .skills {
     padding-left: 1rem;
-    &-headline {
-      padding-left: 2rem;
-      margin-bottom: 5rem;
+    h1 {
+      padding-left: 4rem;
     }
 
     &-text {

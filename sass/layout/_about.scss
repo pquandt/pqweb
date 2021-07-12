@@ -110,16 +110,40 @@
   .about {
     padding-left: 1rem;
     &-headline {
+      padding-right: 1rem;
       padding-left: 2rem;
       margin-bottom: 5rem;
     }
+    .linebreakSpan {
+      width: fit-content;
+      overflow-wrap: normal;
+    }
 
     &-text {
+      overflow-wrap: normal;
       margin-left: 0.5rem;
       margin-bottom: 2rem;
+      grid-column: 2 / 3;
+      grid-row: 2;
+
+      &-wrapper {
+        grid-template-columns: 0.1fr 1fr;
+        grid-template-rows: 1fr 0.5fr;
+      }
+      &-img {
+        margin-left: 3rem;
+      }
+    }
+    .vLine {
+      grid-column: 1;
+      grid-row: 2;
     }
     &-img {
-      display: none;
+      display: block;
+      grid-row: 1;
+      top: 0.1rem;
+      left: 7.6rem;
+      padding-bottom: 1rem;
     }
   }
 }

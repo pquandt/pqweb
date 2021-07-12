@@ -13,7 +13,6 @@ export default function Projects() {
           <div>
             <img src={moonport} alt="img" className="projects-img" />
           </div>
-
           <div className="projects-text">
             <h2>Moonport Website</h2>
             <p>
@@ -25,9 +24,9 @@ export default function Projects() {
               </ul>
             </p>
           </div>
-
           <div className="vLine"></div>
         </div>
+
         <div className="projects-wrapper-phone">
           <div className="vLine"></div>
 
@@ -43,7 +42,7 @@ export default function Projects() {
               </ul>
             </p>
           </div>
-          <div>
+          <div className="phoneimg">
             <img src={phone} alt="img" className="projects-img" />
           </div>
         </div>
