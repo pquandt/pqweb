@@ -86,18 +86,6 @@ h1 {
   font-weight: 700;
   font-size: 3rem; }
 
-.container {
-  display: grid;
-  margin: 0 10rem 0;
-  grid-template-columns: 0.5fr 3fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0.5rem;
-  height: 100vh; }
-
-#navcontent {
-  position: fixed;
-  margin-left: 10%; }
-
 .navbox {
   box-shadow: 0 2px 11px 0 rgba(204, 204, 204, 0.5); }
 
@@ -316,6 +304,7 @@ h1 {
       display: none; } }
 
 .projects {
+  background-color: #ffffff;
   padding-top: 5%;
   padding-left: 20%;
   padding-bottom: 5%; }
@@ -403,40 +392,45 @@ h1 {
   background-color: #0070ff;
   padding-top: 2%;
   padding-left: 20%; }
-  .contact-span {
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 700;
-    font-size: 4rem; }
-  .contact-blue-span {
-    color: #0070ff; }
   .contact h1 {
     color: #ffffff;
     padding-bottom: 2rem; }
   .contact-wrapper {
-    display: block;
+    display: flex;
     padding-bottom: 10rem; }
 
-.contact-button-mail {
+.contact-button {
+  display: block;
+  outline: none;
   background-color: #ffffff;
-  padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
   width: 8rem;
   height: 2.2rem;
   border-radius: 0.5rem;
   font-family: "Open Sans";
   color: #0070ff;
   font-size: 1.4rem;
+  text-decoration: none;
   text-align: center;
-  font-weight: 800; }
+  font-weight: 800;
+  margin-right: 2rem; }
+  .contact-button:hover {
+    color: #131313; }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    padding-left: 2rem; }
   .contact {
     padding-top: 2rem;
-    padding-left: 3rem; } }
+    padding-left: 2rem; }
+    .contact-wrapper {
+      justify-content: center; } }
 
 .card {
-  background-color: #f9f9f9;
+  background-color: #f7f9ff;
   color: #131313;
-  border: 1px solid #f9f9f9;
+  border: 1px solid #f7f9ff;
   padding: 2rem;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
   transition: all 0.8s; }
