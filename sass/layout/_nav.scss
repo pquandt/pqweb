@@ -45,22 +45,7 @@
   display: none;
 }
 
-.burgermenu div {
-  display: block;
-  width: 3rem;
-  height: 0.3rem;
-  background-color: $color-highlight;
-  margin: 0.5rem;
-}
-
 @media screen and (max-width: 768px) {
-  .burgermenu {
-    display: block;
-    position: absolute;
-    top: 1.4rem;
-    right: 0.1rem;
-  }
-
   .nav {
     justify-content: flex-start;
     padding-left: 3rem;
