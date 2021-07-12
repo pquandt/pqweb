@@ -64,6 +64,7 @@
 @media screen and (max-width: 768px) {
   .projects {
     padding-left: 1rem;
+    padding-right: 1rem;
     h1 {
       padding-left: 4rem;
       margin-bottom: 5rem;
@@ -72,11 +73,11 @@
     &-text {
       margin-top: 0;
       margin-left: 0.5rem;
+
       grid-column: 1;
       grid-row: 2;
     }
     &-wrapper-site {
-      width: 90%;
       padding-left: 4rem;
       grid-template-columns: 1fr 0.1fr;
       grid-template-rows: 0.5fr 1fr;
@@ -85,7 +86,7 @@
         grid-row: 2;
       }
       img {
-        margin: 0;
+        margin-right: 6rem;
         width: 20rem;
       }
     }

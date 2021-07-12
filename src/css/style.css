@@ -13,8 +13,6 @@ html {
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
   -webkit-user-select: none;
   /* Safari */
   -moz-user-select: none;
@@ -23,9 +21,6 @@ html {
   /* IE10+/Edge */
   user-select: none;
   /* Standard */ }
-
-html::-webkit-scrollbar {
-  display: none; }
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -363,7 +358,8 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .projects {
-    padding-left: 1rem; }
+    padding-left: 1rem;
+    padding-right: 1rem; }
     .projects h1 {
       padding-left: 4rem;
       margin-bottom: 5rem; }
@@ -373,7 +369,6 @@ h1 {
       grid-column: 1;
       grid-row: 2; }
     .projects-wrapper-site {
-      width: 90%;
       padding-left: 4rem;
       grid-template-columns: 1fr 0.1fr;
       grid-template-rows: 0.5fr 1fr; }
@@ -381,7 +376,7 @@ h1 {
         grid-column: 2;
         grid-row: 2; }
       .projects-wrapper-site img {
-        margin: 0;
+        margin-right: 6rem;
         width: 20rem; }
     .projects-wrapper-phone {
       grid-template-columns: 0.1fr 1fr;
