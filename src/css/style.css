@@ -303,6 +303,9 @@ h1 {
   .about-img-mobile {
     display: none; }
 
+.about {
+  padding-left: 15%; }
+
 @media screen and (max-width: 768px) {
   .about {
     padding-left: 1rem; }
@@ -374,6 +377,9 @@ h1 {
     margin-left: 3rem;
     padding-bottom: 0.6rem; }
 
+.skills {
+  padding-left: 15%; }
+
 @media screen and (max-width: 768px) {
   .skills {
     padding-left: 1rem; }
@@ -432,6 +438,9 @@ h1 {
     font-weight: bold; }
   .projects-text dd {
     margin-left: 3rem; }
+
+.projects {
+  padding-left: 15%; }
 
 @media screen and (max-width: 768px) {
   .projects {
