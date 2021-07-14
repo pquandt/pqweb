@@ -120,7 +120,7 @@ h1 {
 .navmobile {
   display: none; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), (orientation: landscape) {
   .nav {
     justify-content: flex-start;
     padding-left: 3rem; }
@@ -307,7 +307,7 @@ h1 {
   .about {
     padding-left: 15%; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), (orientation: landscape) {
   .about {
     padding-left: 1rem; }
     .about-headline {
@@ -382,7 +382,7 @@ h1 {
   .skills {
     padding-left: 15%; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), (orientation: landscape) {
   .skills {
     padding-left: 1rem; }
     .skills h1 {
@@ -445,7 +445,7 @@ h1 {
   .projects {
     padding-left: 15%; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), (orientation: landscape) {
   .projects {
     padding-left: 1rem;
     padding-right: 1rem; }
@@ -514,7 +514,7 @@ h1 {
   .contact-button:hover {
     color: #131313; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), (orientation: landscape) {
   h1 {
     padding-left: 2rem; }
   .contact {

@@ -58,7 +58,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), (orientation: landscape) {
   .skills {
     padding-left: 1rem;
     h1 {

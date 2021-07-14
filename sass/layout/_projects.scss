@@ -72,7 +72,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), (orientation: landscape) {
   .projects {
     padding-left: 1rem;
     padding-right: 1rem;

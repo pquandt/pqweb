@@ -45,7 +45,7 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), (orientation: landscape) {
   .nav {
     justify-content: flex-start;
     padding-left: 3rem;
