@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../img/logo.svg";
 
 function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    if (isOpen === false) {
+      document.getElementById("navmobile-toggle").checked = false;
+    }
+  });
+
   return (
     <div className="navbox">
       <div className="nav">
@@ -19,11 +30,50 @@ function Nav() {
             <a href="#aboutsection">About</a>
             <a href="#projectssection">Projects</a>
             <a href="#contactsection">Contact</a>
-            <div className="burgermenu">
-              <div className="line1"></div>
-              <div className="line2"></div>
-              <div className="line3"></div>
-            </div>
+          </nav>
+        </div>
+        <div className="navmobile">
+          <input
+            type="checkbox"
+            className="navmobile-checkbox"
+            id="navmobile-toggle"
+            onClick={toggle}
+          />
+          <label htmlFor="navmobile-toggle" className="navmobile-button">
+            <span className="navmobile-icon">&nbsp;</span>
+          </label>
+          <div className="navmobile-bg">&nbsp;</div>
+
+          <nav className="navmobile-nav">
+            <ul className="navmobile-list">
+              <li className="navi-item">
+                <a
+                  href="#aboutsection"
+                  className="navmobile-link"
+                  onClick={toggle}
+                >
+                  About
+                </a>
+              </li>
+              <li className="navi-item">
+                <a
+                  href="#projectssection"
+                  className="navmobile-link"
+                  onClick={toggle}
+                >
+                  Projects
+                </a>
+              </li>
+              <li className="navi-item">
+                <a
+                  href="#contactsection"
+                  className="navmobile-link"
+                  onClick={toggle}
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>

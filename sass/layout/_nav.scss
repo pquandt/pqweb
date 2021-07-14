@@ -41,26 +41,11 @@
   }
 }
 
-.burgermenu {
+.navmobile {
   display: none;
 }
 
-.burgermenu div {
-  display: block;
-  width: 3rem;
-  height: 0.3rem;
-  background-color: $color-highlight;
-  margin: 0.5rem;
-}
-
-@media screen and (max-width: 768px) {
-  .burgermenu {
-    display: block;
-    position: absolute;
-    top: 1.4rem;
-    right: 0.1rem;
-  }
-
+@media screen and (max-width: 768px), (orientation: landscape) {
   .nav {
     justify-content: flex-start;
     padding-left: 3rem;
@@ -70,5 +55,142 @@
   }
   .nav-right {
     display: none;
+  }
+
+  .navmobile {
+    display: block;
+    &-checkbox {
+      display: none;
+    }
+    &-button {
+      background-color: transparent;
+      height: 5rem;
+      width: 7rem;
+      position: absolute;
+      top: 0.2rem;
+      right: 2rem;
+      z-index: 2000;
+      text-align: center;
+      cursor: pointer;
+    }
+    &-bg {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      position: fixed;
+      top: 1rem;
+      right: 2rem;
+      background-color: $color-background;
+      z-index: 1000;
+      opacity: 0;
+      transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    &-nav {
+      display: block;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1500;
+
+      opacity: 0;
+      width: 100%;
+      transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &-list {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 12rem;
+      margin-left: 2rem;
+      list-style: none;
+
+      width: 100%;
+    }
+    &-link {
+      &:link,
+      &:visited {
+        display: inline-block;
+        font-size: 4rem;
+        font-weight: 800;
+        padding: 1rem 2rem;
+        color: $color-font;
+        text-decoration: none;
+      }
+
+      &:hover,
+      &:active {
+        background-position: 100%;
+        color: $color-highlight;
+      }
+    }
+
+    &-checkbox:checked ~ &-bg {
+      opacity: 1;
+      transform: scale(80);
+    }
+
+    &-checkbox:checked ~ &-nav {
+      opacity: 1;
+      width: 100%;
+    }
+    &-checkbox:checked ~ label {
+      position: fixed;
+    }
+
+    &-icon {
+      position: relative;
+      margin-top: 2.6rem;
+
+      &,
+      &::before,
+      &::after {
+        width: 3rem;
+        height: 2px;
+        background-color: $color-highlight;
+        display: inline-block;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all 0.2s;
+      }
+
+      &::before {
+        top: -0.8rem;
+      }
+      &::after {
+        top: 0.8rem;
+      }
+    }
+
+    &-button:hover &-icon::before {
+      top: -1rem;
+    }
+
+    &-button:hover &-icon::after {
+      top: 1rem;
+    }
+
+    &-checkbox:checked + &-button &-icon {
+      background-color: transparent;
+    }
+
+    &-checkbox:checked + &-button &-icon::before {
+      top: 0;
+      transform: rotate(135deg);
+    }
+
+    &-checkbox:checked + &-button &-icon::after {
+      top: 0;
+      transform: rotate(-135deg);
+    }
+  }
+  .navi-item {
+    margin: 1rem;
   }
 }

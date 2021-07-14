@@ -106,14 +106,24 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  .about {
+    padding-left: 15%;
+  }
+}
+
+@media screen and (max-width: 768px), (orientation: landscape) {
   .about {
     padding-left: 1rem;
     &-headline {
-      padding-right: 1rem;
+      position: relative;
       padding-left: 2rem;
       margin-bottom: 5rem;
+      h1 {
+        margin-left: -2.2rem;
+      }
     }
+
     .linebreakSpan {
       width: fit-content;
       overflow-wrap: normal;
