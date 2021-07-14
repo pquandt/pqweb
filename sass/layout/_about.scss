@@ -110,11 +110,11 @@
   .about {
     padding-left: 1rem;
     &-headline {
-      padding-right: 0.5rem;
-      padding-left: 0.3rem;
+      position: relative;
+      padding-left: 2rem;
       margin-bottom: 5rem;
-      & span {
-        padding-left: 2rem;
+      h1 {
+        margin-left: -2.2rem;
       }
     }
 

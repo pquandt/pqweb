@@ -44,6 +44,7 @@
 .navmobile {
   display: none;
 }
+
 @media screen and (max-width: 768px) {
   .nav {
     justify-content: flex-start;
@@ -81,6 +82,7 @@
       right: 2rem;
       background-color: $color-background;
       z-index: 1000;
+      opacity: 0;
       transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
     }
     &-nav {
@@ -125,6 +127,7 @@
     }
 
     &-checkbox:checked ~ &-bg {
+      opacity: 1;
       transform: scale(80);
     }
 

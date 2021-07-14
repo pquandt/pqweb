@@ -151,6 +151,7 @@ h1 {
       right: 2rem;
       background-color: #f7f9ff;
       z-index: 1000;
+      opacity: 0;
       transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1); }
     .navmobile-nav {
       display: block;
@@ -181,6 +182,7 @@ h1 {
       background-position: 100%;
       color: #0070ff; }
     .navmobile-checkbox:checked ~ .navmobile-bg {
+      opacity: 1;
       transform: scale(80); }
     .navmobile-checkbox:checked ~ .navmobile-nav {
       opacity: 1;
@@ -305,11 +307,11 @@ h1 {
   .about {
     padding-left: 1rem; }
     .about-headline {
-      padding-right: 0.5rem;
-      padding-left: 0.3rem;
+      position: relative;
+      padding-left: 2rem;
       margin-bottom: 5rem; }
-      .about-headline span {
-        padding-left: 2rem; }
+      .about-headline h1 {
+        margin-left: -2.2rem; }
     .about .linebreakSpan {
       width: fit-content;
       overflow-wrap: normal; }
