@@ -15,14 +15,14 @@ export default function Projects() {
           </div>
           <div className="projects-text">
             <h2>Moonport Website</h2>
-            <p>
+            <span>
               Simple homepage with roadmap and links to the moonport app.
               <ul>
                 <li>- html</li>
                 <li>- css</li>
                 <li>- javascript</li>
               </ul>
-            </p>
+            </span>
           </div>
           <div className="vLine"></div>
         </div>
@@ -35,11 +35,11 @@ export default function Projects() {
             <p>
               A dezentralized mobile app for making calculations with your
               portfolio.
-              <ul>
+              <span>
                 <li>- react-native</li>
                 <li>- firebase backend</li>
                 <li>- work in progress</li>
-              </ul>
+              </span>
             </p>
           </div>
           <div className="phoneimg">

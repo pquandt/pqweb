@@ -110,13 +110,14 @@
   .about {
     padding-left: 1rem;
     &-headline {
-      padding-right: 1rem;
-      padding-left: 2rem;
+      padding-right: 0.5rem;
+      padding-left: 0.3rem;
       margin-bottom: 5rem;
+      & span {
+        padding-left: 2rem;
+      }
     }
-    &-span {
-      padding-left: 2rem;
-    }
+
     .linebreakSpan {
       width: fit-content;
       overflow-wrap: normal;
