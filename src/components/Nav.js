@@ -3,10 +3,12 @@ import logo from "../img/logo.svg";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
-  if (isOpen === false) {
-    document.getElementById("navmobile-toggle").checked = false;
-  }
+  const toggle = () => {
+    setIsOpen(!isOpen);
+    if (isOpen === false) {
+      document.getElementById("navmobile-toggle").checked = false;
+    }
+  };
 
   return (
     <div className="navbox">
