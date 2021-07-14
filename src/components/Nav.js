@@ -1,14 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../img/logo.svg";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
     if (isOpen === false) {
       document.getElementById("navmobile-toggle").checked = false;
     }
-  };
+  });
 
   return (
     <div className="navbox">
