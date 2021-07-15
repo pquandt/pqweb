@@ -160,15 +160,15 @@ h1 {
       left: 0;
       z-index: 1500;
       opacity: 0;
-      width: 100%; }
+      width: 0%;
+      display: none; }
     .navmobile-list {
       position: absolute;
       top: 0;
       left: 0;
       margin-top: 12rem;
       margin-left: 2rem;
-      list-style: none;
-      width: 100%; }
+      list-style: none; }
     .navmobile-link:link, .navmobile-link:visited {
       display: inline-block;
       font-size: 4rem;
@@ -183,8 +183,11 @@ h1 {
       opacity: 1;
       transform: scale(80); }
     .navmobile-checkbox:checked ~ .navmobile-nav {
+      display: block;
       opacity: 1;
       width: 100%; }
+    .navmobile-checkbox:checked ~ .navmobile-list {
+      display: block; }
     .navmobile-checkbox:checked ~ label {
       position: fixed; }
     .navmobile-icon {
@@ -318,6 +321,7 @@ h1 {
       width: fit-content;
       overflow-wrap: normal; }
     .about-text {
+      padding-right: 5rem;
       overflow-wrap: normal;
       margin-left: 0.5rem;
       margin-bottom: 2rem;
@@ -327,7 +331,8 @@ h1 {
         grid-template-columns: 0.1fr 1fr;
         grid-template-rows: 1fr 0.5fr; }
       .about-text-img {
-        margin-left: 3rem; }
+        margin-left: 3rem;
+        margin-right: 1rem; }
     .about .vLine {
       grid-column: 1;
       grid-row: 2; }
@@ -335,7 +340,7 @@ h1 {
       display: block;
       grid-row: 1;
       top: 0.1rem;
-      left: 7.6rem;
+      left: 5.6rem;
       padding-bottom: 1rem; } }
 
 .skills {
@@ -453,9 +458,13 @@ h1 {
     .projects-text {
       margin-top: 0;
       margin-left: 0.5rem;
+      width: 50%;
       grid-column: 1;
       grid-row: 2; }
+    .projects-phone {
+      display: block; }
     .projects-wrapper-site {
+      margin-right: 1rem;
       padding-left: 4rem;
       grid-template-columns: 1fr 0.1fr;
       grid-template-rows: 0.5fr 1fr; }
@@ -463,8 +472,8 @@ h1 {
         grid-column: 2;
         grid-row: 2; }
       .projects-wrapper-site img {
-        margin-right: 6rem;
-        width: 20rem; }
+        width: 20rem;
+        margin-left: 1rem; }
     .projects-wrapper-phone {
       grid-template-columns: 0.1fr 1fr;
       grid-template-rows: 0.5fr 1fr; }
@@ -472,15 +481,14 @@ h1 {
         grid-column: 1;
         grid-row: 1; }
       .projects-wrapper-phone .phoneimg {
-        padding-left: 5rem;
         grid-column: 2;
         grid-row: 2; }
       .projects-wrapper-phone img {
         width: 20rem; }
       .projects-wrapper-phone .projects-text {
-        padding-right: 4rem;
+        padding-right: 6rem;
         grid-column: 2;
-        grid-row: 1 /2; } }
+        grid-row: 1; } }
 
 .contact {
   background-color: #0070ff;
@@ -519,7 +527,10 @@ h1 {
     padding-top: 2rem;
     padding-left: 2rem; }
     .contact-wrapper {
-      justify-content: center; } }
+      justify-content: center; }
+    .contact-button {
+      padding: 1rem;
+      width: 6rem; } }
 
 .card {
   background-color: #f7f9ff;

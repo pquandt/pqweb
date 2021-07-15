@@ -130,6 +130,7 @@
     }
 
     &-text {
+      padding-right: 5rem;
       overflow-wrap: normal;
       margin-left: 0.5rem;
       margin-bottom: 2rem;
@@ -142,6 +143,7 @@
       }
       &-img {
         margin-left: 3rem;
+        margin-right: 1rem;
       }
     }
     .vLine {
@@ -152,7 +154,7 @@
       display: block;
       grid-row: 1;
       top: 0.1rem;
-      left: 7.6rem;
+      left: 5.6rem;
       padding-bottom: 1rem;
     }
   }

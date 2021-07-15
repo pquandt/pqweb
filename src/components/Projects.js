@@ -10,7 +10,7 @@ export default function Projects() {
           <h1>Projects</h1>
         </div>
         <div className="projects-wrapper-site">
-          <div>
+          <div className="projects-phone">
             <img src={moonport} alt="img" className="projects-img" />
           </div>
           <div className="projects-text">
