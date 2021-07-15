@@ -304,7 +304,7 @@ h1 {
   .about-img-mobile {
     display: none; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
   .about {
     padding-left: 15%; } }
 
@@ -381,13 +381,17 @@ h1 {
     margin-left: 3rem;
     padding-bottom: 0.6rem; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
   .skills {
     padding-left: 15%; } }
 
 @media screen and (max-width: 824px) {
   .skills {
     padding-left: 1rem; }
+    .skills-wrapper {
+      padding-right: 2rem;
+      display: grid;
+      grid-template-columns: 0.1fr 1fr; }
     .skills h1 {
       padding-left: 4rem; }
     .skills-text {
@@ -444,7 +448,7 @@ h1 {
   .projects-text dd {
     margin-left: 3rem; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
   .projects {
     padding-left: 15%; } }
 
@@ -458,7 +462,6 @@ h1 {
     .projects-text {
       margin-top: 0;
       margin-left: 0.5rem;
-      width: 50%;
       grid-column: 1;
       grid-row: 2; }
     .projects-phone {
@@ -469,6 +472,7 @@ h1 {
       grid-template-columns: 1fr 0.1fr;
       grid-template-rows: 0.5fr 1fr; }
       .projects-wrapper-site .vLine {
+        padding-left: 5rem;
         grid-column: 2;
         grid-row: 2; }
       .projects-wrapper-site img {
