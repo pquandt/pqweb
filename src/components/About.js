@@ -26,6 +26,11 @@ export default function About() {
                 projects from which my customers benefit.
               </span>
             </p>
+            <p className="linebreakSpan-mobile">
+              Through my experience in the areas of video, audio and corporate
+              identity, I have a broad understanding of media projects from
+              which my customers benefit.
+            </p>
           </div>
           <div className="about-img">
             <div className="about-img--side about-img--front">
