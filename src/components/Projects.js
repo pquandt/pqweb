@@ -36,9 +36,12 @@ export default function Projects() {
               A dezentralized mobile app for making calculations with your
               portfolio.
               <span>
-                <li>- react-native</li>
-                <li>- firebase backend</li>
-                <li>- work in progress</li>
+                <ul>
+                  {" "}
+                  <li>- react-native</li>
+                  <li>- firebase backend</li>
+                  <li>- work in progress</li>
+                </ul>
               </span>
             </p>
           </div>
