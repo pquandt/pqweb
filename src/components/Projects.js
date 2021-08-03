@@ -37,7 +37,6 @@ export default function Projects() {
               portfolio.
               <span>
                 <ul>
-                  {" "}
                   <li>- react-native</li>
                   <li>- firebase backend</li>
                   <li>- work in progress</li>
