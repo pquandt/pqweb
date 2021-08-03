@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../img/patrick_business_1.jpg";
+import avatar from "../img/P1066364.jpg";
 
 export default function About() {
   return (
@@ -25,6 +25,11 @@ export default function About() {
               <span className="linebreakSpan">
                 projects from which my customers benefit.
               </span>
+            </p>
+            <p className="linebreakSpan-mobile">
+              Through my experience in the areas of video, audio and corporate
+              identity, I have a broad understanding of media projects from
+              which my customers benefit.
             </p>
           </div>
           <div className="about-img">
