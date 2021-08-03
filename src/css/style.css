@@ -91,7 +91,8 @@ h1 {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1000; }
+  z-index: 1000;
+  background-color: #ffffff; }
 
 .nav {
   background-color: #ffffff;
@@ -99,7 +100,8 @@ h1 {
   margin-bottom: 5px;
   padding-top: 2%;
   white-space: nowrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  z-index: 1000; }
   .nav-logo {
     overflow: visible;
     padding-right: 2.3rem; }

@@ -4,6 +4,7 @@
   width: 100%;
   top: 0;
   z-index: 1000;
+  background-color: $color-white;
 }
 .nav {
   background-color: $color-white;
@@ -12,6 +13,7 @@
   padding-top: 2%;
   white-space: nowrap;
   justify-content: space-around;
+  z-index: 1000;
 
   &-logo {
     overflow: visible;
