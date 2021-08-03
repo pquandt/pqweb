@@ -264,7 +264,8 @@ h1 {
 .about-img {
   position: relative;
   top: -10rem;
-  height: 23rem; }
+  height: 23rem;
+  margin-right: auto; }
   .about-img--side {
     transition: all 0.8s ease;
     -webkit-backface-visibility: hidden;
