@@ -12,23 +12,25 @@ export default function Skills() {
 
       <div className="skills-wrapper">
         <div className="vLine"></div>
-        <div className="skills-text">
-          <dl>
-            <dt>Frontend Developement</dt>
-            <dd>html, css, scss, javascript, reactjs, react-native</dd>
-          </dl>
-          <dl>
-            <dt>Fast</dt>
-            <dd>Reduce loading times to a minimum</dd>
+        <div className="skills-left">
+          <div className="skills-text">
+            <dl>
+              <dt>Frontend Developement</dt>
+              <dd>html, css, scss, javascript, reactjs, react-native</dd>
+            </dl>
+            <dl>
+              <dt>Fast</dt>
+              <dd>Reduce loading times to a minimum</dd>
 
-            <dt>Responsive</dt>
-            <dd>Projects should always look good on any device</dd>
+              <dt>Responsive</dt>
+              <dd>Projects should always look good on any device</dd>
 
-            <dt>UI 1:1</dt>
-            <dd>I stick to your design</dd>
-            <dt>Crossmedia skilled</dt>
-            <dd>I worked in different fields of media for years.</dd>
-          </dl>
+              <dt>UI 1:1</dt>
+              <dd>I stick to your design</dd>
+              <dt>Crossmedia skilled</dt>
+              <dd>I worked in different fields of media for years.</dd>
+            </dl>
+          </div>
         </div>
         <div className="skill-img">
           <img src={skillpic} alt="img" className="skills-img" />

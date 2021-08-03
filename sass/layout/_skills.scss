@@ -18,12 +18,17 @@
     padding-left: 8rem;
   }
   &-img {
-    width: 35rem;
+    width: 30rem;
+    margin-right: -4rem;
   }
 
   &-wrapper {
     display: grid;
-    grid-template-columns: 0.1fr 1fr 1fr;
+    grid-template-columns: 0.085fr 0.7fr 1fr;
+  }
+  &-left {
+    display: flex;
+    flex-direction: row;
   }
 }
 

@@ -366,10 +366,14 @@ h1 {
   .skills h1 {
     padding-left: 8rem; }
   .skills-img {
-    width: 35rem; }
+    width: 30rem;
+    margin-right: -4rem; }
   .skills-wrapper {
     display: grid;
-    grid-template-columns: 0.1fr 1fr 1fr; }
+    grid-template-columns: 0.085fr 0.7fr 1fr; }
+  .skills-left {
+    display: flex;
+    flex-direction: row; }
 
 .skills-text {
   margin-top: 6rem;
