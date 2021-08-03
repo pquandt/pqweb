@@ -343,7 +343,13 @@ h1 {
       grid-row: 1;
       top: 0.1rem;
       left: 5.6rem;
-      padding-bottom: 1rem; } }
+      padding-bottom: 1rem; }
+  .about-text-img {
+    color: #fff;
+    position: relative;
+    top: 5.75rem;
+    left: 2rem;
+    width: 100%; } }
 
 .skills {
   background-color: #f7f9ff;
