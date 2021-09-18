@@ -14,13 +14,16 @@ export default function Projects() {
             <img src={moonport} alt="img" className="projects-img" />
           </div>
           <div className="projects-text">
-            <h2>Moonport Website</h2>
+            <a href="https://moonportapp.com" target="_blank" rel="noreferrer">
+              <h2>Moonport Website</h2>
+            </a>
             <span>
-              Simple homepage with roadmap and links to the moonport app.
+              Simple advertising Homepage for a Crypto-Project.
               <ul>
-                <li>- html</li>
-                <li>- css</li>
-                <li>- javascript</li>
+                <li>- ReactJS</li>
+                <li>- Sass</li>
+                <li>- Javascript</li>
+                <li>- Typescript</li>
               </ul>
             </span>
           </div>
@@ -33,13 +36,13 @@ export default function Projects() {
           <div className="projects-text">
             <h2>Moonport App</h2>
             <p>
-              A dezentralized mobile app for making calculations with your
-              portfolio.
+              A mobile app for making calculations with your crypto-portfolio.
               <span>
                 <ul>
-                  <li>- react-native</li>
-                  <li>- firebase backend</li>
-                  <li>- work in progress</li>
+                  <li>- React-Native</li>
+                  <li>- Javascript</li>
+                  <li>- Typescript</li>
+                  <li>- in early developement-phase</li>
                 </ul>
               </span>
             </p>
