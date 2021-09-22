@@ -42,7 +42,7 @@ export default function Projects() {
                   <li>- React-Native</li>
                   <li>- Javascript</li>
                   <li>- Typescript</li>
-                  <li>- in early developement-phase</li>
+                  <li>- in early development-phase</li>
                 </ul>
               </span>
             </p>

@@ -8,7 +8,7 @@ export default function About() {
         <div className="about-headline">
           <h1>Hello, I am Patrick Quandt and</h1>
           <span className="about-span">
-            I am a <span className="about-blue-span">frontend developer</span>
+            I am a <span className="about-blue-span">web developer</span>
           </span>
         </div>
 

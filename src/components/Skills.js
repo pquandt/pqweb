@@ -15,7 +15,7 @@ export default function Skills() {
         <div className="skills-left">
           <div className="skills-text">
             <dl>
-              <dt>Frontend Developement</dt>
+              <dt>Development</dt>
               <dd>html, css, scss, javascript, reactjs, react-native</dd>
             </dl>
             <dl>

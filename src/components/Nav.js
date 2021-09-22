@@ -22,7 +22,7 @@ function Nav() {
           </div>
           <div className="nav-logo-subtext">
             Patrick Quandt <br />
-            Frontend Developer
+            Web-Developer
           </div>
         </div>
         <div className="nav-right">
