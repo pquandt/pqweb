@@ -1,6 +1,6 @@
 import React from "react";
-import phone from "../img/phone.png";
-import moonport from "../img/moonsite.png";
+import phone from "../assets/img/phone.png";
+import moonport from "../assets/img/moonsite.png";
 
 export default function Projects() {
   return (

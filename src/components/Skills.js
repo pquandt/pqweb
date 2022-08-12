@@ -1,5 +1,5 @@
 import React from "react";
-import skillpic from "../img/programming-amico-1.svg";
+import skillpic from "../assets/img/programming-amico-1.svg";
 
 // STILL ABOUT PAGE
 
